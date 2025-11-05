@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block header %}
+<div class="header-class">
+    <a href="https://www.naiss.se/" style="margin-right: 20px; margin-left: 20px;">
+        <img src="https://www.naiss.se/wp-content/uploads/2023/07/naiss_logo_white.png" alt="NAISS Logo" style="height: 70px;">
+    </a>
+    <div class="header-div-column">
+        <h2 class="header-h2">User area</h2>
+        <h3 class="header-h3">National Academic Infrastructure for Super­computing in Sweden</h3>
+    </div>
+</div>
+<div class="header-div-row">
+    <a class="header-a" href="/">Support</a>
+    <a class="header-a" href="/applications/">Software</a>
+</div>
+{{ super() }}
+{% endblock %}
