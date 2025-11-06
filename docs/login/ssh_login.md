@@ -2,11 +2,11 @@
 
 # How to log in with SSH keys
 
-In order to be able to login into PDC system, the user needs a PDC account, and this PDC account must be linked
+In order to be able to login into dardel, the user needs a PDC account, and this PDC account must be linked
 to your [SUPR](https://supr.naiss.se/) account.
-Users can upload their SSH (Secure Shell) public keys with the PDC login portal and then use them to log in to PDC resources.
+Users can upload their SSH (Secure Shell) public keys with the PDC login portal and then use them to log in to Dardel.
 Before following this section, make sure you have a valid PDC account ([Getting Access](../getting_access/get_access.md)).
-Login to PDC systems will be denied without a valid allocation.
+Login to Dardel will be denied without a valid allocation.
 
 Academic and industrial users connected to the Swedish academia can upload their SSH (Secure Shell) public keys on the PDC login portal and
 authenticate themselves with the help of the Swedish User and Project Repository [SUPR](https://supr.naiss.se/).
@@ -31,7 +31,7 @@ Once you have successfully produced a working SSH key pair you let your browser 
 
 ## Authentication process details
 
-SUPR authentication is used to initially set up the communication between the user’s computer and the PDC system, making sure that security is maintained at all times.
+SUPR authentication is used to initially set up the communication between the user’s computer and Dardel, making sure that security is maintained at all times.
 After the initial setup, the login portal will only be needed to manage and change the user’s connection information, e.g. after the expiration date had passed or if the user logs in from an IP-address outside the user’s registered IP ranges.
 
 * Go to [PDC login portal](https://loginportal.pdc.kth.se/). You will see a start page with a link to the Swedish User and Project Repository (SUPR).
@@ -40,7 +40,7 @@ After the initial setup, the login portal will only be needed to manage and chan
 * By default PIs, staff and administrators will be asked to authenticate themselves with a second factor, a Time-based One-time Password (TOTP).
   : Any TOTP authentication app such as e.g. andOTP, FreeOTP, Authy, Google Authenticator or Duo Mobile can be used.
     Use the same app as you used when you registered for the first time for SUPR two-factor authentication.
-* Click on the blue ‘Prove My Identity to PDC’ button. If you get a “Permission Denied” error it may be because your PDC and SUPR accounts are not linked. Please contact PDC support.
+* Click on the blue ‘Prove My Identity to PDC’ button. If you get a “Permission Denied” error it may be because your PDC and SUPR accounts are not linked. Please contact NAISS support.
 
 ## In the login portal
 
@@ -64,7 +64,7 @@ You now get back to the page with personal information in the login portal. You 
 
 Several keys can be added in the PDC login portal. You can add further keys or delete keys. If you want to add a short term entry for the same key, you can upload the same key again and restrict it to a different IP address or address range with a different expiry date.
 
-## Log in to PDC resources
+## Log in to Dardel
 
 Once your SSH public key is properly registered, you can login from a terminal, or by using Putty.
 
@@ -133,7 +133,7 @@ ECDSA key fingerprint is MD5:8c:62:70:4c:b8:f2:c4:ab:14:43:b7:31:ba:c3:c9:52
 
 ## Users who do not have a SUPR account
 
-For users without SUPR account currently only Kerberos login is officially supported. If you are in SUPR, but your SUPR account is not properly linked to PDC, please contact PDC support ([support@pdc.kth.se](mailto:support@pdc.kth.se)) along with information about your PDC username and the email with which your SUPR account is registered. 
+For users without SUPR account currently only Kerberos login is officially supported. If you are in SUPR, but your SUPR account is not properly linked to PDC, please contact NAISS support along with information about your PDC username and the email with which your SUPR account is registered. 
 
 ## Configuring ssh keys and kerberos login
 
@@ -153,7 +153,7 @@ work regardless of which login method you are using.
 
 ## Debugging
 
-If you experience any problems logging in via your newly registered key, you should contact PDC Support ([support@pdc.kth.se](mailto:support@pdc.kth.se)).
+If you experience any problems logging in via your newly registered key, you should contact NAISS Support.
 
 If you already experience problems during the authentication process it might help to start a new private window in the browser with fresh settings.
 

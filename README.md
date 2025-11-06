@@ -40,7 +40,8 @@ which directs what softwares will be published by pointing out active clusters, 
 
 Files for different software should be stored under *software/[software name]*
 
-1. **general.md** Contains general information about the software and a section on how to use the software on clusters
+1. **general.md** Contains general information about the software and a section on how to use the software on clusters. If you want additional
+   clusters with information on how to run on those, just add them to this file.
 1. **versions.yaml** A YAML file containing information about at which clusters the software is installed and what versions are installed
 1. **keywords.yaml** A YAML file containing information about what keywords could be associated with the software
 

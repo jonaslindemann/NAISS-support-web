@@ -1,8 +1,8 @@
 
 # Data Management
 
-This section gives you information about PDC’s storage solutions.
-Working with PDC can involve transferring data back and forth between your local machine and PDC resources, or between different systems at PDC.
+This section gives you information about dardel storage solutions.
+Working with Dardel can involve transferring data back and forth between your local machine and Dardel.
 
 If you have NAISS Swestore allocation, please check [How to use Swestore](file_transfer_swestore-dcache.md) section on how to transfer files to/from Swestore.
 
@@ -12,11 +12,11 @@ As the speed of CPU computations keep increasing, the relatively slow rate of in
 data accessing operations can create bottlenecks and cause programs to slow down significantly.
 Therefore it is very important to pay attention to how your programs are doing I/O and accessing data
 as that can have a huge impact on the run time of your jobs. Here, you will find a quick guide to storing data,
-ideal if you have just started to use PDC resources.
+ideal if you have just started to use Dardel.
 
 ## Nodes for file operations
 
-At PDC we have a number of transfer nodes setup.
+On Dardel we have a number of transfer nodes setup.
 These nodes are dedicated for large file transfers but also
 for extensive file operations involving large amount of data
 or many files. It is important that you use these nodes for extensive
@@ -30,9 +30,9 @@ please use the dardel.pdc.kth.se login node for the file transfers.**
 | dardel.pdc.kth.se | Login node (Dardel) | Submitting jobs and small file transfers          |
 | dardel.pdc.kth.se | Login node (Dardel) | Large transfers and operations on the file system |
 
-## PDC environmental variables
+## Dardel environmental variables
 
-To simplify for the user how to find different folders, PDC has provided a number of specific variables
+To simplify for the user how to find different folders, we have provided a number of specific variables
 which indicate in which folders data should be stored.
 These variables are loaded by default
 

@@ -17,7 +17,7 @@ To access Swestore-dCache, using rclone, you need to be a member of a Swestore s
 Depending on your preference and security needs, you can use rclone with either certificate or username/password authentication.
 We will focus on username/password in this guide.
 
-## Swestore dCache access from PDC transfer node
+## Swestore dCache access from Dardel transfer node
 
 1. Login to one of the transfer nodes
    ```text
