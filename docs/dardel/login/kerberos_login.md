@@ -49,7 +49,7 @@ The login nodenames uses the following syntax:
 ## Step by step Login tutorial
 
 For step-by-step tutorials on how to login, choose from below the operating system of your local computer
-from which you want to access PDC resources. If you face any trouble logging in or need further help, feel free to [Contact Support](../contact/contact_support.md#contact-support).
+from which you want to access PDC resources. If you face any trouble logging in or need further help, feel free to [Contact Support](../../contact/contact_support.md#contact-support).
 
 * [How to login from Linux](linux_login.md)
 * [How to login from Windows](windows_login.md)
@@ -73,7 +73,7 @@ from which you want to access PDC resources. If you face any trouble logging in 
 A lot of solutions for login errors can be found in our FAQ section at [Kerberos](../faq/faq.md#kerberos)
 or at [Login](../faq/faq.md#login)
 
-If you do not find a solution, please [Contact Support](../contact/contact_support.md)
+If you do not find a solution, please [Contact Support](../../contact/contact_support.md)
 with the following information:
 
 * Username

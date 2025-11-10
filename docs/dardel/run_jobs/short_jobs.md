@@ -8,7 +8,7 @@ Running the occasional short job is of course fine. It is often necessary for te
 
 There is also an overhead associated with running many short job steps. A job step is for example an invocation of `srun`. Job steps are cheaper than whole jobs, but too many of them can still cause slowdowns.
 
-Below is some advice for how to reduce the number of short jobs. If you need help with this please [Contact Support](../contact/contact_support.md#contact-support).
+Below is some advice for how to reduce the number of short jobs. If you need help with this please [Contact Support](../../contact/contact_support.md#contact-support).
 
 If you are submitting many similar jobs, also consider using [Job arrays](job_arrays.md#job-arrays).
 

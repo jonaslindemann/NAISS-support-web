@@ -20,7 +20,7 @@ For help with this, please contact [it-support@kth.se](mailto:it-support@kth.se)
 
 Here are the installers that you need:
 
-> ![image](../static/images/Windows_Login/win10-krb-01-downloads.png)
+> ![image](../../static/images/Windows_Login/win10-krb-01-downloads.png)
 
 Links to installation packages:
 
@@ -87,24 +87,24 @@ from different realms.
 
 After opening NIM, choose the advanced NIM view:
 
-> ![image](../static/images/Windows_Login/win10-krb-06-NIM-advanced.png)
+> ![image](../../static/images/Windows_Login/win10-krb-06-NIM-advanced.png)
 
 Obtain new credentials dialog:
 
-> ![image](../static/images/Windows_Login/win10-krb-07-NIM-password.png)
+> ![image](../../static/images/Windows_Login/win10-krb-07-NIM-password.png)
 
 Choose the following options. You may need longer ticket lifetimes if
 you have long running batch jobs:
 
-> ![image](../static/images/Windows_Login/win10-krb-08-NIM-credopts.png)
+> ![image](../../static/images/Windows_Login/win10-krb-08-NIM-credopts.png)
 
 Put in password and check the [x] make default box:
 
-> ![image](../static/images/Windows_Login/win10-krb-09-NIM-makedefault.png)
+> ![image](../../static/images/Windows_Login/win10-krb-09-NIM-makedefault.png)
 
 This is how NIM looks with kerberos tickets and AFS tokens:
 
-> ![image](../static/images/Windows_Login/win10-krb-10-NIM-ticketsandtokens.png)
+> ![image](../../static/images/Windows_Login/win10-krb-10-NIM-ticketsandtokens.png)
 
 For further information on managing Kerberos tickets via NIM, please
 visit [https://www.secure-endpoints.com/netidmgr/v2/docs/](https://www.secure-endpoints.com/netidmgr/v2/docs/).
@@ -135,12 +135,12 @@ is 22 and that SSH is selected underneath.
 Now configure GSSAPI settings by selecting Connection > SSH > Auth >
 GSSAPI and specify GSSAPI DLL:
 
-> ![image](../static/images/Windows_Login/win10-krb-03-heimdal-gssapi.png)
+> ![image](../../static/images/Windows_Login/win10-krb-03-heimdal-gssapi.png)
 
 The GSSAPI library is normally installed here.
 The User-Specified GSSAPI DLL must be on top of the list (press [Up] if neccessary:
 
-> ![image](../static/images/Windows_Login/win10-krb-04-heimdal-gssapi2.png)
+> ![image](../../static/images/Windows_Login/win10-krb-04-heimdal-gssapi2.png)
 
 Now go to Connection > SSH > KEX. In the Algorithm selection policy mark the line
 
@@ -156,20 +156,20 @@ Diffie-Hellman group 14
 
 As seen in the image below:
 
-> ![image](../static/images/Windows_Login/group14.png)
+> ![image](../../static/images/Windows_Login/group14.png)
 
 Before logging in, save your PuTTY config as a profile named _dardel_:
 
 <!--- 
-> ![image](../static/images/Windows_Login/win10-krb-05-puttyprofile.png)
+> ![image](../../static/images/Windows_Login/win10-krb-05-puttyprofile.png)
 --->
-![image](../static/images/Windows_Login/PuTTY_snapshot_1.png)
+![image](../../static/images/Windows_Login/PuTTY_snapshot_1.png)
 
 Now, click Open. If you have valid Kerberos tickets as explained above you will now log in to the cluster. Please note that selecting a saved profile and changing some settings wouldn't implement these changes to the existing/selected profile. 
 
 <!--- A Dardel login looks like this:
 
-> ![image](../static/images/Windows_Login/PuTTY_snapshot_1.png) --->
+> ![image](../../static/images/Windows_Login/PuTTY_snapshot_1.png) --->
 
 <!--The path to your PDC home directory from Windows is
 `\\afs\pdc.kth.se\home\u\username` with `u` as the first letter in your username. -->

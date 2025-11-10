@@ -5,7 +5,7 @@
 In order to be able to login into dardel, the user needs a PDC account, and this PDC account must be linked
 to your [SUPR](https://supr.naiss.se/) account.
 Users can upload their SSH (Secure Shell) public keys with the PDC login portal and then use them to log in to Dardel.
-Before following this section, make sure you have a valid PDC account ([Getting Access](../getting_access/get_access.md)).
+Before following this section, make sure you have a valid PDC account ([Getting Access](../../getting_access/get_access.md)).
 Login to Dardel will be denied without a valid allocation.
 
 Academic and industrial users connected to the Swedish academia can upload their SSH (Secure Shell) public keys on the PDC login portal and
@@ -44,7 +44,7 @@ After the initial setup, the login portal will only be needed to manage and chan
 
 ## In the login portal
 
-![image](../static/images/Dardel_SSH/portal_addkey0.png)
+![image](../../static/images/Dardel_SSH/portal_addkey0.png)
 
 Once you have successfully authenticated yourself you should be back to the login portal.
 Your personal information should be displayed together with the details of the login credentials you already registered.
@@ -52,7 +52,7 @@ If you want to register a new key:
 
 ### Click on ‘Add new key 
 
-![image](../static/images/Dardel_SSH/portal_addkey1.png)
+![image](../../static/images/Dardel_SSH/portal_addkey1.png)
 
 * Upload or copy and paste the **public!** part of your SSH key pair (usually with extension .pub). (Tip: If you don’t see the  *.ssh* directory try toggling the visibility of dot files with e.g. pressing *Ctrl + h* in Linux or *shift + cmd + ‘.’* for MacOS.)
 * Name the label or in case the label came from a .pub file you can also rename the label. Labels are for your personal reference only, but you can’t use the same label twice.
@@ -103,11 +103,11 @@ To log in with Putty, first follow the instructions on how to generate an SSH ke
 
 You can then log in to Dardel by specifying *dardel.pdc.kth.se* as Host Name in the Putty main window.
 
-![image](../static/images/Dardel_SSH/Putty-dardel.png)
+![image](../../static/images/Dardel_SSH/Putty-dardel.png)
 
 When connecting for the first time, Putty will display the alert
 
-![image](../static/images/Dardel_SSH/Putty-hostkey-alert.png)
+![image](../../static/images/Dardel_SSH/Putty-hostkey-alert.png)
 
 You should then compare that the key fingerprint matches with one of the fingerprints stated on this webpage.
 

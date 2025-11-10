@@ -13,56 +13,57 @@ markdown_extensions:
   - attr_list
   - pymdownx.magiclink
 nav:
+nav:
   - Home: index.md
-  - Site Map: site_map.md
-  - Quick start guide: 
-    - Quick Start: basics/quickstart.md
-  - Introduction: 
-    - Introduction: basics/introduction.md
-  - Requesting resources: 
-    - Getting Access: getting_access/get_access.md
-    - Software Development Assistance: getting_access/dev_support.md
-  - How to Login: 
-    - How to log in with SSH keys: login/ssh_login.md
-    - Generating SSH keys: login/ssh_keys.md
-    - How to log in with kerberos: login/kerberos_login.md
-    - How to login from Linux: login/linux_login.md
-    - How to login from Windows: login/windows_login.md
-    - How to login from Mac OS: login/mac_login.md
-    - How to access to Nvidia login node: login/nvidia_login.md
-    - How to configure kerberos and SSH: login/configuration.md 
-    - How to reset your password: login/reset_password.md
-    - Interactive HPC on Dardel: login/interactive_hpc.md
-    - Mounting Dardel directories on your computer: login/mounting.md
-  - How to Run Jobs: 
-    - How to Run Jobs: run_jobs/job_scheduling.md
-    - How to submit jobs: run_jobs/queueing_jobs.md
-    - Job scripts: run_jobs/job_scripts.md
-    - Job script examples: run_jobs/job_scripts_dardel.md
-    - Job arrays: run_jobs/job_arrays.md
-    - Short jobs: run_jobs/short_jobs.md
-    - Run interactively: run_jobs/run_interactively.md
-    - Job Statistics: run_jobs/job_statistics.md
-  - Data Management: 
-    - Data Management: data_management/data_management.md
-    - Klemming: data_management/klemming.md
-    - Swestore: data_management/file_transfer_swestore-dcache.md
-    - File transfer: data_management/file_transfer.md
-    - KTH OneDrive(rclone): data_management/rclone_onedrive.md
-  - Software Development: 
-    - Compilers and libraries: software_development/development.md
-    - Building for AMD CPUs: software_development/development_cpu.md
-    - Building for AMD GPUs: software_development/development_gpu.md
-    - Building for NVIDIA GPUs: software_development/development_gpugh.md
-    - Allinea Forge: software_development/development_allineaforge.md
-    - Downloadable example for compiling and submitting: software_development/development_example.md
-    - References: software_development/development_references.md
-    - Installing software using EasyBuild: software_development/easybuild.md
-    - Installing software using Spack: software_development/spack.md
-  - Frequently Asked Questions  FAQ: 
-    - Frequently Asked Questions (FAQ): faq/faq.md
-  - Contact Support: 
+  - Requesting resources:
+      - Getting Access: getting_access/get_access.md
+      - Software Development Assistance: getting_access/dev_support.md
+  - Dardel:
+      - Quick start guide:
+          - Quick Start: dardel/basics/quickstart.md
+      - Introduction:
+          - Introduction: dardel/basics/introduction.md
+      - How to Login:
+          - How to log in with SSH keys: dardel/login/ssh_login.md
+          - Generating SSH keys: dardel/login/ssh_keys.md
+          - How to log in with kerberos: dardel/login/kerberos_login.md
+          - How to login from Linux: dardel/login/linux_login.md
+          - How to login from Windows: dardel/login/windows_login.md
+          - How to login from Mac OS: dardel/login/mac_login.md
+          - How to access to Nvidia login node: dardel/login/nvidia_login.md
+          - How to configure kerberos and SSH: dardel/login/configuration.md
+          - How to reset your password: dardel/login/reset_password.md
+          - Interactive HPC on Dardel: dardel/login/interactive_hpc.md
+          - Mounting Dardel directories on your computer: dardel/login/mounting.md
+      - How to Run Jobs:
+          - How to Run Jobs: dardel/run_jobs/job_scheduling.md
+          - How to submit jobs: dardel/run_jobs/queueing_jobs.md
+          - Job scripts: dardel/run_jobs/job_scripts.md
+          - Job script examples: dardel/run_jobs/job_scripts_dardel.md
+          - Job arrays: dardel/run_jobs/job_arrays.md
+          - Short jobs: dardel/run_jobs/short_jobs.md
+          - Run interactively: dardel/run_jobs/run_interactively.md
+          - Job Statistics: dardel/run_jobs/job_statistics.md
+      - Data Management:
+          - Data Management: dardel/data_management/data_management.md
+          - Klemming: dardel/data_management/klemming.md
+          - Swestore: dardel/data_management/file_transfer_swestore-dcache.md
+          - File transfer: dardel/data_management/file_transfer.md
+          - KTH OneDrive(rclone): dardel/data_management/rclone_onedrive.md
+      - Software Development:
+          - Compilers and libraries: dardel/software_development/development.md
+          - Building for AMD CPUs: dardel/software_development/development_cpu.md
+          - Building for AMD GPUs: dardel/software_development/development_gpu.md
+          - Building for NVIDIA GPUs: dardel/software_development/development_gpugh.md
+          - Allinea Forge: dardel/software_development/development_allineaforge.md
+          - Downloadable example for compiling and submitting: dardel/software_development/development_example.md
+          - References: dardel/software_development/development_references.md
+          - Installing software using EasyBuild: dardel/software_development/easybuild.md
+          - Installing software using Spack: dardel/software_development/spack.md
+      - Frequently Asked Questions (FAQ):
+          - Frequently Asked Questions (FAQ): dardel/faq/faq.md
+  - Contact Support:
     - Contact Support: contact/contact_support.md
   - Available software:
     - Available softwares: applications/index.md
-    - How to use module to load different softwares into your environment: software/module.md
+    - How to use module to load different softwares into your environment: dardel/software/module.md

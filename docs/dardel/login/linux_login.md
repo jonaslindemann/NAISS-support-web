@@ -126,7 +126,7 @@ debtap <package>.deb
 sudo pacman -U <package>.pkg
 ```
 
-If you need support for a Unix dialect that is missing, please [Contact Support](../contact/contact_support.md)
+If you need support for a Unix dialect that is missing, please [Contact Support](../../contact/contact_support.md)
 for additional information.
 
 For configure information regarding your setup goto [How to configure kerberos and SSH with kerberos](configuration.md)
