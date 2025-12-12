@@ -13,16 +13,14 @@ markdown_extensions:
   - attr_list
   - pymdownx.magiclink
 nav:
-nav:
   - Home: index.md
+  - Introduction: basics/introduction.md
   - Requesting resources:
       - Getting Access: getting_access/get_access.md
       - Software Development Assistance: getting_access/dev_support.md
   - Dardel:
       - Quick start guide:
           - Quick Start: dardel/basics/quickstart.md
-      - Introduction:
-          - Introduction: dardel/basics/introduction.md
       - How to Login:
           - How to log in with SSH keys: dardel/login/ssh_login.md
           - Generating SSH keys: dardel/login/ssh_keys.md
@@ -62,8 +60,8 @@ nav:
           - Installing software using Spack: dardel/software_development/spack.md
       - Frequently Asked Questions (FAQ):
           - Frequently Asked Questions (FAQ): dardel/faq/faq.md
-  - Contact Support:
-    - Contact Support: contact/contact_support.md
+  - Contact Support: contact/contact_support.md
+  - Courses: courses/index.md
   - Available software:
     - Available softwares: applications/index.md
     - How to use module to load different softwares into your environment: dardel/software/module.md
