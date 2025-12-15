@@ -10,7 +10,7 @@ NAISS Support will have limited availability during the summer and Christmas per
 
 ## [Alvis](https://www.c3se.chalmers.se/documentation/first_time_users/intro-alvis/slides/)
 
-## Arrhenius just test
+## Arrhenius
 
 ## [Bianca](https://docs.uppmax.uu.se/cluster_guides/bianca/)
 
