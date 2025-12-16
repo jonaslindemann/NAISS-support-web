@@ -6,198 +6,193 @@ site_url = "https://menzzana.github.io/NAISS-support-web/"
 repo_url = "https://github.com/menzzana/NAISS-support-web"
 edit_uri = "blob/main/docs/"
 
-theme:
-  name: modern
-
-
 nav = [
-  { "Home" = "index.md"},
-  { "Requesting resources" = [
-      { "Getting Access" = "getting_access/get_access.md" },
-      { "Software Development Assistance" = "getting_access/dev_support.md" } 
-    ]
-  },
-  { "Dardel" = [
-    { "Quick Start" = "dardel/basics/quickstart.md" },
-    { "Introduction" = "dardel/basics/introduction.md" }
-
-
-    ]
-  }
+  { "Home" = "index.md"}
+#  { "Requesting resources" = [
+#      { "Getting Access" = "getting_access/get_access.md" },
+#      { "Software Development Assistance" = "getting_access/dev_support.md" } ,
+#    ]
+#  },
+#  { "Dardel" = [
+#      { "Quick Start" = "dardel/basics/quickstart.md" },
+#      { "Introduction" = "dardel/basics/introduction.md" },
+#    ]
+#  }
 ]
 
 
-  - Dardel:
-      - Quick start guide:
-
-      - Introduction:
-  
-      - How to Login:
-          - How to log in with SSH keys: dardel/login/ssh_login.md
-          - Generating SSH keys: dardel/login/ssh_keys.md
-          - How to log in with kerberos: dardel/login/kerberos_login.md
-          - How to login from Linux: dardel/login/linux_login.md
-          - How to login from Windows: dardel/login/windows_login.md
-          - How to login from Mac OS: dardel/login/mac_login.md
-          - How to access to Nvidia login node: dardel/login/nvidia_login.md
-          - How to configure kerberos and SSH: dardel/login/configuration.md
-          - How to reset your password: dardel/login/reset_password.md
-          - Interactive HPC on Dardel: dardel/login/interactive_hpc.md
-          - Mounting Dardel directories on your computer: dardel/login/mounting.md
-
-      - How to Run Jobs:
-          - How to Run Jobs: dardel/run_jobs/job_scheduling.md
-          - How to submit jobs: dardel/run_jobs/queueing_jobs.md
-          - Job scripts: dardel/run_jobs/job_scripts.md
-          - Job script examples: dardel/run_jobs/job_scripts_dardel.md
-          - Job arrays: dardel/run_jobs/job_arrays.md
-          - Short jobs: dardel/run_jobs/short_jobs.md
-          - Run interactively: dardel/run_jobs/run_interactively.md
-          - Job Statistics: dardel/run_jobs/job_statistics.md
-
-      - Data Management:
-          - Data Management: dardel/data_management/data_management.md
-          - Klemming: dardel/data_management/klemming.md
-          - Swestore: dardel/data_management/file_transfer_swestore-dcache.md
-          - File transfer: dardel/data_management/file_transfer.md
-          - KTH OneDrive (rclone): dardel/data_management/rclone_onedrive.md
-
-      - Software Development:
-          - Compilers and libraries: dardel/software_development/development.md
-          - Building for AMD CPUs: dardel/software_development/development_cpu.md
-          - Building for AMD GPUs: dardel/software_development/development_gpu.md
-          - Building for NVIDIA GPUs: dardel/software_development/development_gpugh.md
-          - Allinea Forge: dardel/software_development/development_allineaforge.md
-          - Downloadable example for compiling and submitting: dardel/software_development/development_example.md
-          - References: dardel/software_development/development_references.md
-          - Installing software using EasyBuild: dardel/software_development/easybuild.md
-          - Installing software using Spack: dardel/software_development/spack.md
-
-      - Frequently Asked Questions (FAQ):
-          - FAQ: dardel/faq/faq.md
-
-  - Contact Support:
-      - Contact Support: contact/contact_support.md
-
-  - Available software:
-      - Available softwares: applications/index.md
-      - How to use module to load different softwares into your environment: dardel/software/module.md
-
-      - Bioinformatics:
-          - Iq-tree: applications/iq-tree/index.md
-
-      - Chemistry:
-          - Abinit: applications/abinit/index.md
-          - Cp2k: applications/cp2k/index.md
-          - Gamess: applications/gamess/index.md
-          - Gpaw: applications/gpaw/index.md
-          - Libxc: applications/libxc/index.md
-          - Nwchem: applications/nwchem/index.md
-          - Octopus: applications/octopus/index.md
-          - Orca: applications/orca/index.md
-          - Quantum-espresso: applications/quantum-espresso/index.md
-          - Vasp: applications/vasp/index.md
-          - Veloxchem: applications/veloxchem/index.md
-
-      - Compilers and languages:
-          - Java: applications/java/index.md
-          - Julia: applications/julia/index.md
-          - Python: applications/python/index.md
-
-      - Debugging tools:
-          - Linaro-forge: applications/linaro-forge/index.md
-
-      - Finite element analysis:
-          - Abaqus: applications/abaqus/index.md
-          - Comsol: applications/comsol/index.md
-
-      - Fluid dynamics:
-          - Ansys-fluent: applications/ansys-fluent/index.md
-          - Converge: applications/converge/index.md
-          - Openfoam: applications/openfoam/index.md
-          - Starccm+: applications/starccm+/index.md
-          - Su2: applications/su2/index.md
-
-      - Libraries:
-          - Boost: applications/boost/index.md
-          - Cosma: applications/cosma/index.md
-          - Cubelib: applications/cubelib/index.md
-          - Elpa: applications/elpa/index.md
-          - Gmp: applications/gmp/index.md
-          - Gsl: applications/gsl/index.md
-          - Heffte: applications/heffte/index.md
-          - Libvori: applications/libvori/index.md
-          - Mpi4py: applications/mpi4py/index.md
-          - Parmetis: applications/parmetis/index.md
-          - Pytorch: applications/pytorch/index.md
-          - Scotch: applications/scotch/index.md
-          - Spfft: applications/spfft/index.md
-          - Spla: applications/spla/index.md
-          - Tensorflow: applications/tensorflow/index.md
-
-      - Mathematics:
-          - Mathematica: applications/mathematica/index.md
-          - Matlab: applications/matlab/index.md
-          - R: applications/r/index.md
-
-      - Molecular dynamics:
-          - Amber: applications/amber/index.md
-          - Gromacs: applications/gromacs/index.md
-          - Lammps: applications/lammps/index.md
-          - Namd: applications/namd/index.md
-          - Plumed: applications/plumed/index.md
-
-      - Performance tools:
-          - Linaro-forge: applications/linaro-forge/index.md
-
-      - Physics:
-          - Abinit: applications/abinit/index.md
-          - Cp2k: applications/cp2k/index.md
-          - Elk: applications/elk/index.md
-          - Fleur: applications/fleur/index.md
-          - Gpaw: applications/gpaw/index.md
-          - Libint-cp2k: applications/libint-cp2k/index.md
-          - Libxc: applications/libxc/index.md
-          - Octopus: applications/octopus/index.md
-          - Quantum-espresso: applications/quantum-espresso/index.md
-          - Rspt: applications/rspt/index.md
-          - Spglib: applications/spglib/index.md
-          - Uppasd: applications/uppasd/index.md
-          - Vasp: applications/vasp/index.md
-          - Wannier90: applications/wannier90/index.md
-
-      - Tools:
-          - Apptainer: applications/apptainer/index.md
-          - Paraview: applications/paraview/index.md
-          - Pixi: applications/pixi/index.md
-          - Scalasca: applications/scalasca/index.md
-          - Score-p: applications/score-p/index.md
-          - Singularity: applications/singularity/index.md
-          - Visit: applications/visit/index.md
-
-      - Visualization:
-          - Paraview: applications/paraview/index.md
-          - Visit: applications/visit/index.md
-
-      - Misc:
-          - Ase: applications/ase/index.md
-          - Blast: applications/blast/index.md
-
+# theme:
+#   name: modern
+# 
+#   - Dardel:
+#       - Quick start guide:
+# 
+#       - Introduction:
+#   
+#       - How to Login:
+#           - How to log in with SSH keys: dardel/login/ssh_login.md
+#           - Generating SSH keys: dardel/login/ssh_keys.md
+#           - How to log in with kerberos: dardel/login/kerberos_login.md
+#           - How to login from Linux: dardel/login/linux_login.md
+#           - How to login from Windows: dardel/login/windows_login.md
+#           - How to login from Mac OS: dardel/login/mac_login.md
+#           - How to access to Nvidia login node: dardel/login/nvidia_login.md
+#           - How to configure kerberos and SSH: dardel/login/configuration.md
+#           - How to reset your password: dardel/login/reset_password.md
+#           - Interactive HPC on Dardel: dardel/login/interactive_hpc.md
+#           - Mounting Dardel directories on your computer: dardel/login/mounting.md
+# 
+#       - How to Run Jobs:
+#           - How to Run Jobs: dardel/run_jobs/job_scheduling.md
+#           - How to submit jobs: dardel/run_jobs/queueing_jobs.md
+#           - Job scripts: dardel/run_jobs/job_scripts.md
+#           - Job script examples: dardel/run_jobs/job_scripts_dardel.md
+#           - Job arrays: dardel/run_jobs/job_arrays.md
+#           - Short jobs: dardel/run_jobs/short_jobs.md
+#           - Run interactively: dardel/run_jobs/run_interactively.md
+#           - Job Statistics: dardel/run_jobs/job_statistics.md
+# 
+#       - Data Management:
+#           - Data Management: dardel/data_management/data_management.md
+#           - Klemming: dardel/data_management/klemming.md
+#           - Swestore: dardel/data_management/file_transfer_swestore-dcache.md
+#           - File transfer: dardel/data_management/file_transfer.md
+#           - KTH OneDrive (rclone): dardel/data_management/rclone_onedrive.md
+# 
+#       - Software Development:
+#           - Compilers and libraries: dardel/software_development/development.md
+#           - Building for AMD CPUs: dardel/software_development/development_cpu.md
+#           - Building for AMD GPUs: dardel/software_development/development_gpu.md
+#           - Building for NVIDIA GPUs: dardel/software_development/development_gpugh.md
+#           - Allinea Forge: dardel/software_development/development_allineaforge.md
+#           - Downloadable example for compiling and submitting: dardel/software_development/development_example.md
+#           - References: dardel/software_development/development_references.md
+#           - Installing software using EasyBuild: dardel/software_development/easybuild.md
+#           - Installing software using Spack: dardel/software_development/spack.md
+# 
+#       - Frequently Asked Questions (FAQ):
+#           - FAQ: dardel/faq/faq.md
+# 
+#   - Contact Support:
+#       - Contact Support: contact/contact_support.md
+# 
+#   - Available software:
+#       - Available softwares: applications/index.md
+#       - How to use module to load different softwares into your environment: dardel/software/module.md
+# 
+#       - Bioinformatics:
+#           - Iq-tree: applications/iq-tree/index.md
+# 
+#       - Chemistry:
+#           - Abinit: applications/abinit/index.md
+#           - Cp2k: applications/cp2k/index.md
+#           - Gamess: applications/gamess/index.md
+#           - Gpaw: applications/gpaw/index.md
+#           - Libxc: applications/libxc/index.md
+#           - Nwchem: applications/nwchem/index.md
+#           - Octopus: applications/octopus/index.md
+#           - Orca: applications/orca/index.md
+#           - Quantum-espresso: applications/quantum-espresso/index.md
+#           - Vasp: applications/vasp/index.md
+#           - Veloxchem: applications/veloxchem/index.md
+# 
+#       - Compilers and languages:
+#           - Java: applications/java/index.md
+#           - Julia: applications/julia/index.md
+#           - Python: applications/python/index.md
+# 
+#       - Debugging tools:
+#           - Linaro-forge: applications/linaro-forge/index.md
+# 
+#       - Finite element analysis:
+#           - Abaqus: applications/abaqus/index.md
+#           - Comsol: applications/comsol/index.md
+# 
+#       - Fluid dynamics:
+#           - Ansys-fluent: applications/ansys-fluent/index.md
+#           - Converge: applications/converge/index.md
+#           - Openfoam: applications/openfoam/index.md
+#           - Starccm+: applications/starccm+/index.md
+#           - Su2: applications/su2/index.md
+# 
+#       - Libraries:
+#           - Boost: applications/boost/index.md
+#           - Cosma: applications/cosma/index.md
+#           - Cubelib: applications/cubelib/index.md
+#           - Elpa: applications/elpa/index.md
+#           - Gmp: applications/gmp/index.md
+#           - Gsl: applications/gsl/index.md
+#           - Heffte: applications/heffte/index.md
+#           - Libvori: applications/libvori/index.md
+#           - Mpi4py: applications/mpi4py/index.md
+#           - Parmetis: applications/parmetis/index.md
+#           - Pytorch: applications/pytorch/index.md
+#           - Scotch: applications/scotch/index.md
+#           - Spfft: applications/spfft/index.md
+#           - Spla: applications/spla/index.md
+#           - Tensorflow: applications/tensorflow/index.md
+# 
+#       - Mathematics:
+#           - Mathematica: applications/mathematica/index.md
+#           - Matlab: applications/matlab/index.md
+#           - R: applications/r/index.md
+# 
+#       - Molecular dynamics:
+#           - Amber: applications/amber/index.md
+#           - Gromacs: applications/gromacs/index.md
+#           - Lammps: applications/lammps/index.md
+#           - Namd: applications/namd/index.md
+#           - Plumed: applications/plumed/index.md
+# 
+#       - Performance tools:
+#           - Linaro-forge: applications/linaro-forge/index.md
+# 
+#       - Physics:
+#           - Abinit: applications/abinit/index.md
+#           - Cp2k: applications/cp2k/index.md
+#           - Elk: applications/elk/index.md
+#           - Fleur: applications/fleur/index.md
+#           - Gpaw: applications/gpaw/index.md
+#           - Libint-cp2k: applications/libint-cp2k/index.md
+#           - Libxc: applications/libxc/index.md
+#           - Octopus: applications/octopus/index.md
+#           - Quantum-espresso: applications/quantum-espresso/index.md
+#           - Rspt: applications/rspt/index.md
+#           - Spglib: applications/spglib/index.md
+#           - Uppasd: applications/uppasd/index.md
+#           - Vasp: applications/vasp/index.md
+#           - Wannier90: applications/wannier90/index.md
+# 
+#       - Tools:
+#           - Apptainer: applications/apptainer/index.md
+#           - Paraview: applications/paraview/index.md
+#           - Pixi: applications/pixi/index.md
+#           - Scalasca: applications/scalasca/index.md
+#           - Score-p: applications/score-p/index.md
+#           - Singularity: applications/singularity/index.md
+#           - Visit: applications/visit/index.md
+# 
+#       - Visualization:
+#           - Paraview: applications/paraview/index.md
+#           - Visit: applications/visit/index.md
+# 
+#       - Misc:
+#           - Ase: applications/ase/index.md
+#           - Blast: applications/blast/index.md
+# 
+# 
 
 [project.theme]
 # https://zensical.org/docs/setup/basics/?h=theme#theme-variant
 #variant = "classic"
 
-
-#extra_css:
-#  - static/css/styles.css
-
+extra_css = "static/css/styles.css"
 
 # https://zensical.org/docs/customization/#extending-the-theme
-custom_dir = "docs/overrides"
+#custom_dir = "docs/overrides"
 
 # favicon = "favicon.ico"
-logo = "logo/naiss_logo_white.png"
+# logo = "logo/naiss_logo_white.png"
 #logo = "https://raw.githubusercontent.com/smashedr/repo-images/refs/heads/master/actions-tools/logo256.png"
 
 # https://zensical.org/docs/setup/language/
