@@ -7,12 +7,12 @@ all: build
 build:
 	make clean
 	python3 format_software_info.py
-	mkdocs build
+	zensical build
 # Runs a local server
 serve:
 	make clean
 	python3 format_software_info.py
-	mkdocs serve
+	zensical serve
 # As we do not have a site, this does not work at them moment
 # public:
 #	python3 update_docs.py
