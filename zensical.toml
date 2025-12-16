@@ -28,22 +28,23 @@ nav = [
        { "Interactive HPC on Dardel" = "dardel/login/interactive_hpc.md" },
        { "Mounting Dardel directories on your computer" = "dardel/login/mounting.md" },
      ]},
+     { "How to Run Jobs" = [
+       { "How to Run Jobs" = "dardel/run_jobs/job_scheduling.md" },
+       { "How to submit jobs" = "dardel/run_jobs/queueing_jobs.md" },
+       { "Job scripts" = "dardel/run_jobs/job_scripts.md" },
+       { "Job script examples" = "dardel/run_jobs/job_scripts_dardel.md" },
+       { "Job arrays" = "dardel/run_jobs/job_arrays.md" },
+       { "Short jobs" = "dardel/run_jobs/short_jobs.md" },
+       { "Run interactively" = "dardel/run_jobs/run_interactively.md" },
+       { "Job Statistics" = "dardel/run_jobs/job_statistics.md" },
+     ]},
   ]}
 ]
 
 
 #   - Dardel:
-#       - How to Login:
 # 
-#       - How to Run Jobs:
-#           - How to Run Jobs: dardel/run_jobs/job_scheduling.md
-#           - How to submit jobs: dardel/run_jobs/queueing_jobs.md
-#           - Job scripts: dardel/run_jobs/job_scripts.md
-#           - Job script examples: dardel/run_jobs/job_scripts_dardel.md
-#           - Job arrays: dardel/run_jobs/job_arrays.md
-#           - Short jobs: dardel/run_jobs/short_jobs.md
-#           - Run interactively: dardel/run_jobs/run_interactively.md
-#           - Job Statistics: dardel/run_jobs/job_statistics.md
+#       - :
 # 
 #       - Data Management:
 #           - Data Management: dardel/data_management/data_management.md
