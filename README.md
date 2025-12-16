@@ -6,10 +6,10 @@ Both tools however enable to publish material in MarkDown.
 
 ## Installation and using mkDocs
 
-1. Find instructions at https://www.mkdocs.org/getting-started/
+1. Find instructions at https://www.Zensical.org/getting-started/
 2. You need some extra extensions to render these documents
    1. In order to install attr_list, adminition and superfences
-      `pip install mkdocs-material`
+      `pip install Zensical-material`
 
 ## Published material
 
@@ -22,7 +22,7 @@ The primary document is available in `site`
 
 ### Support documentation
 
-The primary document is available in `template/mkdocs.yaml`
+The primary document is available in `template/Zensical.yaml`
 When site is build this file will act as a template, copied to
 the main folder and software information will be added to it.
 All the markdown file are found in `docs`
@@ -47,12 +47,15 @@ Files for different software should be stored under *software/[software name]*
 
 ## build site
 
-To create material for mkdocs just `make build` which will create a `site` folder with all html files
-for both hugo and mkdocs. This folder can the be moved to the actual site.
+To create material for Zensical just `zensical build`
+which will create a `site` folder with all HTML files
+for both hugo and Zensical.
+This folder can the be moved to the actual site.
 
 ### Running site locally
 
-In order to start mkdocs at the local computer use `make serve` from top level folder and navigate to https://127.0.0.1:1313
+In order to start Zensical at the local computer use `zensical serve`
+from top level folder and navigate to `https://127.0.0.1:1313`
 
 ## publish site
 
