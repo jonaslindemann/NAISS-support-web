@@ -21,9 +21,6 @@ nav = [
 ]
 
 
-# theme:
-#   name: modern
-# 
 #   - Dardel:
 #       - Quick start guide:
 # 
@@ -186,14 +183,13 @@ nav = [
 # https://zensical.org/docs/setup/basics/?h=theme#theme-variant
 #variant = "classic"
 
-extra_css = "static/css/styles.css"
+extra_css = ["static/css/styles.css"]
 
 # https://zensical.org/docs/customization/#extending-the-theme
 #custom_dir = "docs/overrides"
 
 # favicon = "favicon.ico"
-# logo = "logo/naiss_logo_white.png"
-#logo = "https://raw.githubusercontent.com/smashedr/repo-images/refs/heads/master/actions-tools/logo256.png"
+logo = "https://www.naiss.se/wp-content/uploads/2023/07/naiss_logo_white.png"
 
 # https://zensical.org/docs/setup/language/
 language = "en"
