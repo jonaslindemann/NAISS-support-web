@@ -161,6 +161,37 @@ nav = [
   ]},
 ]
 
+[project.theme]
+font.text = "Inter"
+font.code = "Roboto Mono"
+custom_dir = "custom_theme"
+navigation_depth = 4
+features = [
+    "content.code.copy",
+    "header.autohide",
+    "navigation.instant",
+    "navigation.tracking",
+    "navigation.prune",
+    "navigation.indexes",
+    "search.highlight",
+    "toc.follow"
+]
+
+[[project.theme.palette]] 
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "naiss"
+accent = "naiss"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "naiss"
+accent = "naiss"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
 
 #   - Dardel:
 # 
