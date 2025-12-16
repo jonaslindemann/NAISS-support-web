@@ -12,31 +12,28 @@ nav = [
     { "Getting Access" = "getting_access/get_access.md" },
     { "Software Development Assistance" = "getting_access/dev_support.md" } ,
   ]},
-#  { "Dardel" = [
-#      { "Quick Start" = "dardel/basics/quickstart.md" },
-#      { "Introduction" = "dardel/basics/introduction.md" },
-#    ]
-#  }
+  { "Dardel" = [
+     { "Quick Start" = "dardel/basics/quickstart.md" },
+     { "Introduction" = "dardel/basics/introduction.md" },
+     { "How to Login" = [
+       { "How to log in with SSH keys" = "dardel/login/ssh_login.md" },
+       { "Generating SSH keys" = "dardel/login/ssh_keys.md" },
+       { "How to log in with kerberos" = "dardel/login/kerberos_login.md" },
+       { "How to login from Linux" = "dardel/login/linux_login.md" },
+       { "How to login from Windows" = "dardel/login/windows_login.md" },
+       { "How to login from Mac OS" = "dardel/login/mac_login.md" },
+       { "How to access to Nvidia login node" = "dardel/login/nvidia_login.md" },
+       { "How to configure kerberos and SSH" = "dardel/login/configuration.md" },
+       { "How to reset your password" = "dardel/login/reset_password.md" },
+       { "Interactive HPC on Dardel" = "dardel/login/interactive_hpc.md" },
+       { "Mounting Dardel directories on your computer" = "dardel/login/mounting.md" },
+     ]},
+  ]}
 ]
 
 
 #   - Dardel:
-#       - Quick start guide:
-# 
-#       - Introduction:
-#   
 #       - How to Login:
-#           - How to log in with SSH keys: dardel/login/ssh_login.md
-#           - Generating SSH keys: dardel/login/ssh_keys.md
-#           - How to log in with kerberos: dardel/login/kerberos_login.md
-#           - How to login from Linux: dardel/login/linux_login.md
-#           - How to login from Windows: dardel/login/windows_login.md
-#           - How to login from Mac OS: dardel/login/mac_login.md
-#           - How to access to Nvidia login node: dardel/login/nvidia_login.md
-#           - How to configure kerberos and SSH: dardel/login/configuration.md
-#           - How to reset your password: dardel/login/reset_password.md
-#           - Interactive HPC on Dardel: dardel/login/interactive_hpc.md
-#           - Mounting Dardel directories on your computer: dardel/login/mounting.md
 # 
 #       - How to Run Jobs:
 #           - How to Run Jobs: dardel/run_jobs/job_scheduling.md
