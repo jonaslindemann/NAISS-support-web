@@ -154,10 +154,6 @@ ACC: __tgt_unregister_lib
 
 [Frontier user guide](https://docs.olcf.ornl.gov/systems/frontier_user_guide.html)
 
-[AMD Instinct product line](https://www.amd.com/en/graphics/instinct-server-accelerators/)
-
-[AMD Instinct Wikipedia page](https://en.wikipedia.org/wiki/AMD_Instinct/)
-
 [ENCCS general GPU programming course](https://enccs.github.io/gpu-programming/)
 
 ### Introductory videos from AMD
@@ -182,8 +178,6 @@ ACC: __tgt_unregister_lib
 
 [Michael Klemm, Intro to GPU Programming with the OpenMP API (2021-10-20)](https://www.openmp.org/wp-content/uploads/2021-10-20-Webinar-OpenMP-Offload-Programming-Introduction.pdf)
 
-[AMD’s ROCm documentation, chapter OpenMP support](https://rocmdocs.amd.com/en/latest/Programming_Guides/openmp_support.html)
-
 [ENCCS and CSC, OpenMP for GPU offloading](https://enccs.github.io/openmp-gpu/)
 
 ### SYCL
@@ -201,5 +195,3 @@ Codeplay’s introduction to SYCL (videos)
 [ENCCS workshop, Heterogeneous programming with SYCL](https://enccs.github.io/sycl-workshop/)
 
 [Aksel Alpay, Universität Heidelberg, SYCL Tutorial: An Introduction to hipSYCL (video)](https://www.youtube.com/watch?v=B_DHJj-iEO8)
-
-[hipSYCL blog, benchmarking hipSYCL with HeCBench on AMD hardware (2022-07-20)](https://hipsycl.github.io/hipsycl/amd/hecbench/hecbench-benchmarks/)
