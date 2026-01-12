@@ -1,6 +1,8 @@
 [project]
 site_name = "NAISS High Performance Computing"
 docs_dir = "docs"
+[project.theme]
+custom_dir = "overrides"
 
 # This was used for MkDocs
 # site_dir = "site"
