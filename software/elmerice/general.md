@@ -4,12 +4,3 @@ Elmer/Ice is an open source finite element software for ice Sheet, glaciers and 
 http://elmerice.elmerfem.org/
 To see which versions of elmer/ice are installed on any of the machines at PDC log into the machine and type
 module avail elmerice
-
-
-## How to use
-
-
-# Running on the Batch system
-sample job script
-Formation on how to submit jobs on Beskow, see `Job Submission on Beskow <https://www.pdc.kth.se/resources/computers/beskow/how-to/run>`_ .
-
