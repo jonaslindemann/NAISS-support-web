@@ -93,3 +93,4 @@ and brackets in the table of content. This is intentional:
 the [`format_software_info.py`](format_software_info.py) script
 adds items at the end and creates a `zensical.toml` file in the root of
 the repository.
+
