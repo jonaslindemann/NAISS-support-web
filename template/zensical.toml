@@ -171,6 +171,3 @@ nav = [
   { "Available software" = [
     { "Available softwares" = "applications/index.md" },
     { "How to use module to load different softwares into your environment" = "dardel/software/module.md" },
-  ]}
-]
-
