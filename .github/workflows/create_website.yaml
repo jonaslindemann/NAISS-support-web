@@ -28,9 +28,6 @@ jobs:
       - name: Create software table
         run: make build
 
-      - name: See the files that are there
-        run: ls
-
       # From https://github.com/marketplace/actions/zensical-action#deploy
       - name: Zensical Action
         id: zensical
