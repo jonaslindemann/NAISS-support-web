@@ -171,3 +171,8 @@ nav = [
   { "Available software" = [
     { "Available softwares" = "applications/index.md" },
     { "How to use module to load different softwares into your environment" = "dardel/software/module.md" },
+
+
+# This file intentionally ends here and -indeed- there are some missing braces.
+# That is because the file 'update_docs.py' (in the project root)
+# adds the last items to this incomplete table of content.
