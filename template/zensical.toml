@@ -124,7 +124,7 @@ site_name = "NAISS High Performance Computing"
 docs_dir = "docs"
 auto_nav = false
 
-extra_css = ["docs/static/css/styles.css"]
+extra_css = ["static/css/styles.css"]
 
 nav = [
   { "Home" = "index.md"},
