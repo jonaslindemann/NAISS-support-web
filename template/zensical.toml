@@ -115,9 +115,18 @@ custom_dir = "overrides"
 # This was used for MkDocs
 # site_dir = "site"
 
+# Old stuff? See the 'project.urls' section below :-)
 site_url = "https://menzzana.github.io/NAISS-support-web/"
 repo_url = "https://github.com/menzzana/NAISS-support-web"
 edit_uri = "blob/main/docs/"
+
+# From the Zensical homepage
+[project.urls]
+Homepage = "https://menzzana.github.io/NAISS-support-web/"
+#Documentation = "https://github.com/menzzana/NAISS-support-web/docs/"
+Source = "https://github.com/menzzana/NAISS-support-web/"
+#Changelog = "https://zensical.org/docs/changelog/"
+Issues = "https://github.com/menzzana/NAISS-support-web/issues"
 
 [project]
 site_name = "NAISS High Performance Computing"
