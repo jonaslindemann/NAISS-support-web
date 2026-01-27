@@ -117,8 +117,8 @@ custom_dir = "overrides"
 # This was used for MkDocs
 # site_dir = "site"
 
-site_url = "https://richelbilderbeek.github.io/NAISS-support-web/"
-repo_url = "https://github.com/richelbilderbeek/NAISS-support-web"
+site_url = "https://menzzana.github.io/NAISS-support-web/"
+repo_url = "https://github.com/menzzana/NAISS-support-web"
 edit_uri = "blob/main/docs/"
 
 [project]
