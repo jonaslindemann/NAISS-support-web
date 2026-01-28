@@ -4,7 +4,7 @@ Here you can find documentation on how to use NAISS resources. If you cannot fin
 
 NAISS Support will have limited availability during the summer and Christmas periods.
 
-[How to apply for an allocation](getting_access/get_access.md#apply-for-a-new-time-allocation-via-naiss){: .md-button } [How to apply for an account](getting_access/get_access.md#applying-for-an-account){: .md-button }
+[How to apply for an allocation](/allocations/){: .md-button } [How to apply for an account](getting_access/get_access.md#applying-for-an-account){: .md-button }
 [Software Development Assistance (Beta)](getting_access/dev_support.md){: .md-button }
 
 ## [Alvis](https://www.c3se.chalmers.se/documentation/first_time_users/intro-alvis/slides/)

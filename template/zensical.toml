@@ -134,10 +134,8 @@ extra_css = ["static/css/styles.css"]
 nav = [
   { "Home" = "index.md"},
   { "Introduction" = "basics/introduction.md" },
-  { "Requesting resources" = [
-    { "Getting Access" = "getting_access/get_access.md" },
-    { "Software Development Assistance" = "getting_access/dev_support.md" } ,
-  ]},
+  { "Getting Access" = "getting_access/get_access.md" },
+  { "Software Development Assistance" = "getting_access/dev_support.md" } ,
   { "Dardel" = [
     { "Quick Start" = "dardel/basics/quickstart.md" },
     { "How to Login" = [
