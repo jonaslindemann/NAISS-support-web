@@ -41,13 +41,14 @@ As a PI, you should decide on the…
 1. Duration of the project.
 
 Please keep in mind that the PI will apply for a Time Allocation to cover the needs of all the members in the research project.
+The amount of resources for each type can be obtained in [https://SUPR.naiss.se/round/](https://supr.naiss.se/round/naiss/)
 You can decide what allocation would suit the best for your project with the help of the table below:
 
-| Description            | Small allocation          | Medium allocation                                             | Large allocation                                                                                                                                              |
-|------------------------|---------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Limit                  | 5K corehours/month        | 400K corehours/month                                          | Above 400K corehours/month                                                                                                                                    |
-| Applicant requirement  | PhD student or higher     | Senior scientist in Swedish academia                          | Senior scientist in Swedish academia                                                                                                                          |
-| Application evaluation | Only technical evaluation | (Assistant professor or higher)<br/>Only technical evaluation | (Assistant professor or higher)<br/>Scientific and technical evaluation<br/>by SNAC twice a year.<br/>Evidence of successful work on a<br/>medium allocation. |
+| Description | Small allocation | Medium allocation | Large allocation |
+|:---|:---|:---|:---|
+| Applicant requirement | PhD student or higher | Senior scientist in Swedish academia | Senior scientist in Swedish academia |
+| Proposal evaluation | Only technical evaluation | Only technical evaluation | Scientific and technical evaluation. Evidence of successful work on a medium allocation. |
+| Time limit | Evaluated weekly | Evaluated monthly. Submission before the 15th every month | Evaluated by NAC twice a year |
 
 Read more about time allocations and rules governing them at [https://SUPR.naiss.se/round/](https://SUPR.naiss.se/round/)
 
