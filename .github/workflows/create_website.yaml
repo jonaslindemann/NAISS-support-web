@@ -12,27 +12,42 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      # 1) Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2) Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
-      - name: Install dependencies
+      # 3) Install Python dependencies
+      - name: Install Python libraries
         run: pip install pyyaml zensical
 
+      # 4) Build the site (`zensical.toml` is created by your script)
       - name: Build website
         run: |
           make build
-          echo "Listing built site contents"
+          echo "Contents of site directory:"
           ls -la site
 
-      - name: Deploy to GitHub Pages
-        uses: github/pages-deploy-action@v1
+      # 5) Configure Pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      # 6) Upload the Pages artifact
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: site
+          path: ./site
+
+      # 7) Deploy the artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
