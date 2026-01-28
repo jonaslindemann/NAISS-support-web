@@ -1,10 +1,11 @@
 name: Build and Deploy Website
 
+# Trigger on push to main or manual trigger
 on:
   push:
     branches:
       - main
-  workflow_dispatch:  # allows manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -26,24 +27,20 @@ jobs:
         with:
           python-version: 3.x
 
-      # Install Python dependencies
-      - name: Install dependencies
+      # Install dependencies
+      - name: Install Python libraries
         run: pip install pyyaml zensical
 
       # Build the site
       - name: Build website
         run: |
           make build
-          echo "Listing built site:"
-          ls -la site
+          echo "Listing built site contents:"
+          ls -la site  # confirm files exist
 
-      # Deploy the built site to GitHub Pages
+      # 5️Deploy to GitHub Pages (via Actions)
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
-
-
-
-
