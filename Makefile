@@ -7,16 +7,14 @@ all: build
 build:
 	make clean
 	python3 -u format_software_info.py
+	cd $(CURDIR)
 	zensical build
 # Runs a local server
 serve:
 	make clean
 	python3 -u format_software_info.py
+	cd $(CURDIR)
 	zensical serve
-# As we do not have a site, this does not work at them moment
-# public:
-#	python3 update_docs.py
-
 # Optional: Clean the site directory
 clean:
 	rm -rf site
