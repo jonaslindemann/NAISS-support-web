@@ -1,10 +1,11 @@
-# Create, build and deploy the website
-name: Create website
+name: Build and Deploy Website
 
 on:
   push:
+    branches:
+      - main
+  workflow_dispatch:  # allows manual trigger
 
-# Needed by Zensical
 permissions:
   contents: read
   pages: write
@@ -12,26 +13,36 @@ permissions:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
-      - name: Install Python libraries
+      # Install Python dependencies
+      - name: Install dependencies
         run: pip install pyyaml zensical
 
-      - name: Create software table
-        run: make build
+      # Build the site
+      - name: Build website
+        run: |
+          make build
+          echo "Listing built site:"
+          ls -la site
 
-      # From https://github.com/marketplace/actions/zensical-action#deploy
-      - name: Zensical Action
-        id: zensical
-        uses: cssnr/zensical-action@v1
+      # Deploy the built site to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
 
 
 
