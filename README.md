@@ -47,7 +47,7 @@ Files for different software should be stored under *software/[software name]*
 
 ## format_software_info.py
 
-This python script should always be executed prior of running zensical.
+This python script should always be executed prior of building the docs with zensical.
 You can see how it is used in the *Makefile*
 
 What the script does is....
@@ -89,22 +89,3 @@ You can now use a webbrowser to see the site at `https://127.0.0.1:1313`.
 The site is published automatically upon a `git push`.
 
 ## Technical FAQ
-
-### I edit [`zensical.toml`](zensical.toml) and nothing happens. Why?
-
-This is because by `make build` is it overwritten.
-
-[We know this is a problem](https://github.com/menzzana/NAISS-support-web/issues/11).
-
-Edit `template/zensical.toml` instead.
-
-### Why is [`template/zensical.toml`](template/zensical.toml) broken?
-
-Because the [`format_software_info.py`](format_software_info.py) script creates
-a working `zensical.toml` file from it.
-
-[`template/zensical.toml`](template/zensical.toml) has too few closing braces
-and brackets in the table of content. This is intentional:
-the [`format_software_info.py`](format_software_info.py) script
-adds items at the end and creates a `zensical.toml` file in the root of
-the repository.
