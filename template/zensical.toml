@@ -112,13 +112,9 @@ features = [
 [project.theme]
 custom_dir = "overrides"
 
-# This was used for MkDocs
-# site_dir = "site"
-
-# Old stuff? See the 'project.urls' section below :-)
-site_url = "https://menzzana.github.io/NAISS-support-web/"
-repo_url = "https://github.com/menzzana/NAISS-support-web"
-edit_uri = "blob/main/docs/"
+[site]
+title = "NAISS Website"
+base_url = "/NAISS-support-web/" 
 
 # From the Zensical homepage
 [project.urls]
