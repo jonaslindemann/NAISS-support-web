@@ -6,12 +6,12 @@ all: build
 # Build NAISS documentation site
 build:
 	make clean
-	python3 format_software_info.py
+	python3 -u format_software_info.py
 	zensical build
 # Runs a local server
 serve:
 	make clean
-	python3 format_software_info.py
+	python3 -u format_software_info.py
 	zensical serve
 # As we do not have a site, this does not work at them moment
 # public:
