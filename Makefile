@@ -7,13 +7,11 @@ all: build
 build:
 	make clean
 	python3 -u format_software_info.py
-	ls -la
 	zensical build
 # Runs a local server
 serve:
 	make clean
 	python3 -u format_software_info.py
-	ls -la
 	zensical serve
 # Optional: Clean the site directory
 clean:
