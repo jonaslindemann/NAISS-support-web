@@ -137,13 +137,13 @@ extra_css = ["static/css/styles.css"]
 
 nav = [
   { "Home" = "index.md"},
+  { "Introduction" = "basics/introduction.md" },
   { "Requesting resources" = [
     { "Getting Access" = "getting_access/get_access.md" },
     { "Software Development Assistance" = "getting_access/dev_support.md" } ,
   ]},
   { "Dardel" = [
     { "Quick Start" = "dardel/basics/quickstart.md" },
-    { "Introduction" = "dardel/basics/introduction.md" },
     { "How to Login" = [
        { "How to log in with SSH keys" = "dardel/login/ssh_login.md" },
        { "Generating SSH keys" = "dardel/login/ssh_keys.md" },

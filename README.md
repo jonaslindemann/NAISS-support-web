@@ -4,7 +4,7 @@ This is the documentation for NAISS support.
 
 - [Go to the nicely rendered pages](https://menzzana.github.io/NAISS-support-web/)
 
-## Installation and using mkDocs
+## Installation and using zensical
 
 1. Find instructions at [the Zensical documentation](https://zensical.org/docs/get-started/)
 2. You need some extra extensions to render these documents
@@ -45,6 +45,22 @@ Files for different software should be stored under *software/[software name]*
 1. **versions.yaml** A YAML file containing information about at which clusters the software is installed and what versions are installed
 1. **keywords.yaml** A YAML file containing information about what keywords could be associated with the software
 
+## format_software_info.py
+
+This python script should always be executed prior of running zensical.
+You can see how it is used in the *Makefile*
+
+What the script does is....
+
+1. Creates `docs/application` folder
+1. Adds information and files for each software in the `docs/application` folder
+   1. Updates `general.md` with information regarding installed versions
+   1. Updates `general.md` with information regarding keywords
+1. Moves `zensical.toml` from template to root folder
+1. Updates `zensical.toml` with information regarding all softwares
+1. Moves `index.md` from template to `docs/application` folder
+1. Updates `index.md` with information regarding all softwares
+
 ## Build site
 
 To build the website, use:
@@ -53,13 +69,8 @@ To build the website, use:
 make build
 ```
 
-Using `zensical build` will fail, as
-[`template/zensical.toml`](template/zensical.toml) is
-(1) not in the root folder, (2) in an intentionally broken state.
-The [`format_software_info.py`](format_software_info.py) script creates
-a working `zensical.toml` file.
-
-
+If you are running `zensical build` manually prior of running this
+command you need to run [`format_software_info.py`](format_software_info.py)
 
 ## Run website locally
 
@@ -69,12 +80,8 @@ To build the website, use:
 make serve
 ```
 
-Using `zensical serve` will fail, as
-[`template/zensical.toml`](template/zensical.toml) is
-(1) not in the root folder, (2) in an intentionally broken state.
-The [`format_software_info.py`](format_software_info.py) script creates
-a working `zensical.toml` file.
-
+If you are running `zensical serve` manually prior of running this
+command you need to run [`format_software_info.py`](format_software_info.py)
 You can now use a webbrowser to see the site at `https://127.0.0.1:1313`.
 
 ## Publish site
@@ -101,7 +108,3 @@ and brackets in the table of content. This is intentional:
 the [`format_software_info.py`](format_software_info.py) script
 adds items at the end and creates a `zensical.toml` file in the root of
 the repository.
-
-
-
-

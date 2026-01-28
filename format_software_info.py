@@ -2,6 +2,7 @@ import os
 import sys
 import yaml
 import re
+import traceback
 #-------------------------------------------------------------------------------
 # Constants
 #-------------------------------------------------------------------------------
@@ -125,6 +126,7 @@ def writeYAMLMenu(keywords):
   fp.close()
 #-------------------------------------------------------------------------------
 def main():
+  print("Creating files from templates")
   os.system("cp template/zensical.toml .")
   os.system("mkdir -p %s" % (SOFTWARE_DOCS,))
   os.system("cp template/index.md %s" % (SOFTWARE_DOCS,))
@@ -134,6 +136,7 @@ def main():
   fpidx=open(SOFTWARE_DOCS+"/index.md","a")
   keywords={}
   keywords['misc']=[]
+  print("Fetching and sorting softwares")
   for software in softwares:
     softwarename=os.path.basename(software)
     if not checkSoftware(softwarename,clusters):
@@ -149,7 +152,14 @@ def main():
     appendGeneralInfo(softwarename,fp)
     fp.close()
   fpidx.close()
+  print("Adding software to index")
   writeYAMLMenu(keywords)
+  print("Ready!")
 #-------------------------------------------------------------------------------
-if __name__ == '__main__':
-  main()
+try:
+    if __name__ == '__main__':
+      main()
+except Exception:
+    traceback.print_exc(file=sys.stderr)
+    raise
+#-------------------------------------------------------------------------------
