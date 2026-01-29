@@ -1,3 +1,9 @@
+html, body {
+    font-family: "Sora", sans-serif;
+    }
+* {
+    font-family: inherit;
+    }
 .md-button:link,
 .md-button:visited,
 .md-button:active,
@@ -34,7 +40,6 @@
     font-weight: bold;
     }
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', serif; 
     color: #004791 !important;
     font-weight: 600 !important;
     }
@@ -83,13 +88,11 @@ h1, h2, h3, h4 {
 .header-h2 {
     margin:  10px 10px 10px 10px;
     font-size: 30px;
-    font-family: Arial, sans-serif;
     color: white !important;
     }
 .header-h3 {
     margin:  10px 10px 10px 10px;
     font-size: 20px;
-    font-family: Arial, sans-serif;
     color: white !important;
     }
 .header-div column {
@@ -104,7 +107,6 @@ h1, h2, h3, h4 {
     }
 .header-a {
     font-weight: bold;
-    font-family: Arial, sans-serif;
     font-size: 20px;
     margin: 0px 10px 10px 30px;
     color: white !important;
