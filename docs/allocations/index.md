@@ -1,13 +1,6 @@
 
 # Allocations
 
-This is a placeholder page for information regarding allocations
-
-1. Allocations
-1. How to apply for allocations
-1. What we expect for type of information for proposal
-1. What type of allocations and who can apply
-
 ## Getting compute time
 
 Before running at NAISS, users must belong to at least one Time Allocation.
@@ -50,9 +43,9 @@ You can decide what allocation would suit the best for your project with the hel
 | Proposal evaluation | Only technical evaluation | Only technical evaluation | Scientific and technical evaluation. Evidence of successful work on a medium allocation. |
 | Time limit | Evaluated weekly | Evaluated monthly. Submission before the 15th every month | Evaluated by NAC twice a year |
 
-Read more about time allocations and rules governing them at [https://SUPR.naiss.se/round/](https://SUPR.naiss.se/round/)
-
 Once you decide on the details of your Time Allocation, [Apply via a SUPR account](/getting_access/get_access/#apply-via-a-supr-account).
 You can then login/signup on [SUPR](https://supr.naiss.se) and submit a proposal.
 When you are a member of an active project, you may apply for a user account, in case you do not have it,
 directly within [SUPR](https://supr.naiss.se).
+
+<!-- This page needs more information regarding 1) helping users to send in proposal 2) what we demand from proposal 3) policy -->
