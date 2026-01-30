@@ -1,3 +1,10 @@
+---
+tags:
+  - faq
+  - frequently asked questions
+  - general
+---
+
 # Frequently Asked Questions
 
 Welcome to the general 'Frequently Asked Questions' (FAQ) page.

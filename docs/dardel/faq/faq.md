@@ -1,3 +1,9 @@
+---
+tags:
+  - faq
+  - frequently asked questions
+  - dardel
+---
 
 
 # Frequently Asked Questions (FAQ)
@@ -7,6 +13,9 @@
 ### Does Dardel have a desktop environment that can be accessed from a web browser?
 
 No.
+
+You can find all the ways to access Dardel at
+[the 'Login' page](../login/login.md).
 
 ## Filesystem
 
