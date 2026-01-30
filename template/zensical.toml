@@ -133,8 +133,10 @@ extra_css = ["static/css/styles.css"]
 
 # Allows to use emojis and icons, from
 # https://zensical.org/docs/authoring/icons-emojis/#configuration
-[project.markdown_extensions.attr_list]
-[project.markdown_extensions.pymdownx.emoji]
+project.markdown_extensions = [
+    "attr_list",
+    "pymdownx.emoji"
+  ]
 
 nav = [
   { "Home" = "index.md"},

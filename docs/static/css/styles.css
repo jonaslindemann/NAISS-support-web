@@ -95,14 +95,20 @@ h1, h2, h3, h4 {
     font-size: 20px;
     color: white !important;
     }
-.header-div column {
+.header-div-column {
     display: flex;
     flex-direction: column;
+    align-items: left;
+    margin: 20px;
+    margin-left: 200px; 
+    }
+.header-user-area {
+    font-size: 1.0rem;
+    font-weight: 600;
     }
 .header-div-row {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to right, #4b0029, #010088);
     color: white !important;
     }
 .header-a {
@@ -110,5 +116,12 @@ h1, h2, h3, h4 {
     font-size: 20px;
     margin: 0px 10px 10px 30px;
     color: white !important;
-    text-decoration: none;
+    text-decoration-line: none;
+    }
+.header-a:hover,
+.header-a:focus {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
     }

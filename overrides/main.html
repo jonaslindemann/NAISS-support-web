@@ -8,19 +8,21 @@
 
 {% block header %}
 <div class="header-class">
-    <a href="https://www.naiss.se/" style="margin-right: 20px; margin-left: 20px;">
-        <img src="https://www.naiss.se/wp-content/uploads/2023/07/naiss_logo_white.png" alt="NAISS Logo" style="height: 70px;">
-    </a>
     <div class="header-div-column">
-        <h2 class="header-h2">User area</h2>
-        <h3 class="header-h3">National Academic Infrastructure for Super­computing in Sweden</h3>
+        <a href="https://www.naiss.se/">
+            <img src="https://www.naiss.se/wp-content/uploads/2023/07/naiss_logo_white.png"
+                 alt="NAISS Logo" style="max-width: 180px;">
+        </a>
+        <div class="header-user-area">User area</div>
+    </div>
+
+    <div class="header-div-row">
+        <a class="header-a" href="{{ base_url }}/">Support</a>
+        <a class="header-a" href="{{ base_url }}/applications/">Software</a>
+        <a class="header-a" href="{{ base_url }}/allocations/">Allocations</a>
+        <a class="header-a" href="{{ base_url }}/courses/">Courses & Workshops</a>
     </div>
 </div>
-<div class="header-div-row">
-    <a class="header-a" href="{{ base_url }}/">Support</a>
-    <a class="header-a" href="{{ base_url }}/applications/">Software</a>
-    <a class="header-a" href="{{ base_url }}/allocations/">Allocations</a>
-    <a class="header-a" href="{{ base_url }}/courses/">Courses & Workshops</a>
-</div>
+
 {{ super() }}
 {% endblock %}
