@@ -2,6 +2,12 @@
 
 # Frequently Asked Questions (FAQ)
 
+## Login
+
+### Does Dardel have a desktop environment that can be accessed from a web browser?
+
+No.
+
 ## Filesystem
 
 ### I get “Disk quota exceeded” in my project directory even though the storage quota is not full

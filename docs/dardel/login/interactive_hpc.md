@@ -1,7 +1,18 @@
-
+---
+tags:
+  - desktop
+  - environment
+  - remote
+  - visual
+  - graphical
+  - login
+  - access
+---
 
 # Interactive HPC at PDC
 
+This page describes how to access the Dardel remote desktop environment
+and submit jobs.
 
 ## Introduction
 
