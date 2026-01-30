@@ -9,7 +9,7 @@ This page helps you find the courses you need.
 
 Some courses we want to highlight:
 
-- [The NAISS Intro week](https://naiss-training.github.io/NAISS-intro-week/)
+- [The NAISS Introduction Training Week](https://naiss-training.github.io/NAISS-intro-week/)
 - Command line courses:
     - Basic: [the Command Line 101 course](https://hpc2n.github.io/linux-command-line-101)
     - Intermediate: [the Command Line 201 course](https://uppmax.github.io/linux-command-line-201/)
