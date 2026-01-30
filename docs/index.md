@@ -40,7 +40,7 @@ HPC Cluster|Documentation
 -----------|-------------------------------------------------------------------
 Alvis      |[Documentation](https://www.c3se.chalmers.se/documentation/first_time_users/intro-alvis/slides/) (external)
 Arrhenius  |Not yet
-Bianca     |[Documentation](https://docs.uppmax.uu.se/cluster_guides/bianca/) (external)
+Bianca     |[Documentation](https://docs.uppmax.uu.se/cluster_guides/bianca/) (external) :fontawesome-arrow-up-right-from-square:
 Dardel     |[Documentation](dardel/basics/quickstart.md)
 LUMI       |[Documentation](https://docs.csc.fi) (external)
 Tetralith  |[Documentation](https://www.nsc.liu.se/support/systems/tetralith-getting-started/) (external)
