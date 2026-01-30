@@ -1,3 +1,12 @@
+---
+tags:
+  - login
+  - access
+  - log in 
+search:
+  boost: 3
+---
+
 # Login
 
 Here we describe the multiple ways to log in to Dardel.
