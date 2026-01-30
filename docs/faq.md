@@ -1,4 +1,16 @@
-# General Frequently Asked Questions (FAQ)
+# Frequently Asked Questions
+
+Welcome to the general 'Frequently Asked Questions' (FAQ) page.
+
+The goal of this page is to answer general questions.
+For questions about specific HPC cluster,
+follow the link in the table below.
+
+HPC cluster|FAQ pages
+-----------|-------------------------------
+Arrhenius  |Not yet
+Bianca     |[Bianca FAQ](https://docs.uppmax.uu.se/cluster_guides/cluster_guide_faq/)
+Dardel     |[Dardel FAQ](dardel/faq/faq.md)
 
 ## What is the goal of this website?
 
@@ -11,3 +23,4 @@ suitable as teaching material.
 ## How do I contribute to this website?
 
 See [our contributing guide](CONTRIBUTING.md)
+
