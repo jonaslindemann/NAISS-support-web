@@ -1,10 +1,34 @@
-# NAISS documentation
+# NAISS user documentation
 
-Here you can find documentation on how to use NAISS resources.
-If you cannot find the information you need in the official documentation,
-or through a global web search please [contact us](contact/contact_support.md).
-We are always glad to help,
-and we also appreciate suggestions for improving our documentation.
+Welcome to the NAISS user documentation!
+
+The goal of this page is to redirect you to where you want to go:
+
+- [Getting access](#getting-access) (see below)
+- [Documentation per HPC cluster](#naiss-documentation-per-hpc-cluster)
+  (see below)
+- [NAISS support](#naiss-support-availability) (see below)
+- [Frequently Asked Questions](faq.md) for answers to your questions.
+- [Our contributing guide](CONTRIBUTING.md).
+- [Contact us](contact/contact_support.md).
+
+## Getting access
+
+<!--
+
+RJCB: suggest to move this: this page is a redirect page.
+
+I would enjoy this to be merge to 'Getting Access'
+
+-->
+
+To use a NAISS HPC cluster, one first needs:
+
+- An account: see
+  [how to apply for an account](getting_access/get_access.md#applying-for-an-account)
+- An allocation: see
+  [how to apply for an allocation](allocations/)
+
 
 ## NAISS documentation per HPC cluster
 
@@ -24,22 +48,18 @@ Tetralith  |[Documentation](https://www.nsc.liu.se/support/systems/tetralith-get
 For an overview of all HPC clusters,
 see [the SCoRe documentation on computational resources](https://docs.score.nbis.se/compute/).
 
-## NAISS Support
+## NAISS support availability
+
+<!-- 
+RJCB: suggest to move this: this page is a redirect page.
+
+I would enjoy to see 'Support' as a heading, so that
+a user can easily find it.
+
+-->
 
 NAISS Support will have limited availability during
 the summer and Christmas periods.
 
 [Software Development Assistance (Beta)](getting_access/dev_support.md){: .md-button }
 
-## Getting access
-
-To use a NAISS HPC cluster, one first needs:
-
-- An account: see
-  [how to apply for an account](getting_access/get_access.md#applying-for-an-account)
-- An allocation: see
-  [how to apply for an allocation](allocations/)
-
----
-
-[FAQ](dardel/faq/faq.md){: .md-button } [Contact support](contact/contact_support.md){: .md-button } 

@@ -11,5 +11,3 @@ suitable as teaching material.
 ## How do I contribute to this website?
 
 See [our contributing guide](CONTRIBUTING.md)
-
-## TEST TEST TEST
