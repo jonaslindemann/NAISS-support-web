@@ -139,6 +139,7 @@ nav = [
   { "Dardel" = [
     { "Quick Start" = "dardel/basics/quickstart.md" },
     { "How to Login" = [
+       { "Login" = "dardel/login/login.md" },
        { "How to log in with SSH keys" = "dardel/login/ssh_login.md" },
        { "Generating SSH keys" = "dardel/login/ssh_keys.md" },
        { "How to log in with kerberos" = "dardel/login/kerberos_login.md" },
