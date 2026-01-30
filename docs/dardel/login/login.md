@@ -20,7 +20,7 @@ Your favorite way to login depends mostly on which environment you prefer:
 Parameter             |Console environment                |Desktop environment
 ----------------------|-----------------------------------|-----------------------------------
 Screenshot            |![Console](console_environment.png)|![Desktop](desktop_environment.png)
-Features              |Powerful                           |Intuitive
+Features              |Powerful                           |Intuitive, beginner-friendly
 Program type needed   |SSH client                         |ThinLinc client
 Example program names |`Terminal`, MobaXterm              |ThinLinc
 Requires installation?|Probably                           |Most likely
@@ -33,11 +33,14 @@ Here is a decision tree, to determine which way to log in:
 ```mermaid
 flowchart TD
   need_gui(Need to run a graphical program?)
+  comfortable_with_terminal(Are you comfortable in a terminal?)
   use_terminal[Use a terminal]
-  use_local[Use a local ThinLinc client]
+  use_thinlinc[Use a local ThinLinc client]
 
-  need_gui --> |no| use_terminal
-  need_gui --> |yes| use_local
+  need_gui --> |no| comfortable_with_terminal
+  comfortable_with_terminal --> |yes| use_terminal
+  comfortable_with_terminal --> |no| use_thinlinc
+  need_gui --> |yes| use_thinlinc
 ```
 
 The procedures can be found at:
