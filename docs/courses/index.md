@@ -2,11 +2,14 @@
 
 This page helps you find the courses you need.
 
-For an overview of all NAISS, NBIS, ENCCS, and more courses,
-see [The SCoRe courses overview](https://docs.score.nbis.se/courses/).
+- For an overview of all NAISS, NBIS, ENCCS, and more courses,
+  see [The SCoRe courses overview](https://docs.score.nbis.se/courses/).
+
+
 
 Some courses we want to highlight:
 
+- [The NAISS Intro week](https://naiss-training.github.io/NAISS-intro-week/)
 - Command line courses:
     - Basic: [the Command Line 101 course](https://hpc2n.github.io/linux-command-line-101)
     - Intermediate: [the Command Line 201 course](https://uppmax.github.io/linux-command-line-201/)
