@@ -3,7 +3,22 @@
 {% block extrahead %}
   {{ super() }}
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap"\>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const header = document.querySelector('.header-class');
+        if (!header) return;
+        const THRESHOLD = 40;
+        function onScroll() {
+            const y = (document.scrollingElement || document.documentElement).scrollTop;
+            if (y > THRESHOLD) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            }
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        });
+    </script>
 {% endblock %}
 
 {% block header %}
@@ -23,6 +38,5 @@
         <a class="header-a" href="{{ base_url }}/courses/">Courses & Workshops</a>
     </div>
 </div>
-
 {{ super() }}
 {% endblock %}

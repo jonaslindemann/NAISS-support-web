@@ -1,5 +1,6 @@
 html, body {
     font-family: "Sora", sans-serif;
+    padding-top: 70px;
     }
 * {
     font-family: inherit;
@@ -78,12 +79,23 @@ h1, h2, h3, h4 {
     color: #000000 !important;
     }
 .header-class {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100px;
+    height: 130px;
     background: linear-gradient(to right, #4b0029, #010088);
     color: white !important;
+    }
+.header-class.scrolled {
+    background: #182637;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    color: #111;
     }
 .header-h2 {
     margin:  10px 10px 10px 10px;
