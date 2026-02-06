@@ -95,13 +95,14 @@ def writeVersions(softwarename,clusters,fp,fpidx):
 #-------------------------------------------------------------------------------
 # Write general information about the software
 def appendGeneralInfo(softwarename,fp):
-  if not os.path.isfile(os.path.join(SOFTWARE_DIR,softwarename,"general.md")):
-    return
-  fp2=open(os.path.join(SOFTWARE_DIR,softwarename,"general.md"),"r")
   fp.write("## General information\n\n")
-  for line in fp2:
-    fp.write(line)
-  fp2.close()
+  if os.path.isfile(os.path.join(SOFTWARE_DIR,softwarename,"general.md")):
+    fp2=open(os.path.join(SOFTWARE_DIR,softwarename,"general.md"),"r")
+    for line in fp2:
+      fp.write(line)
+    fp2.close()
+  else:
+    fp.write("No information has been provided for this software")
   fp.write("\n")
 #-------------------------------------------------------------------------------
 # Check if this is an active cluster
