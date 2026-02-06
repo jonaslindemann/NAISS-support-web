@@ -3,7 +3,9 @@
 Information about what software are available at our resources, together
 with what version of the software is installed.
 
-Within this documentation you can also find information on **How to use** said software
+In order to use a software you must load the appropriate module for the software.
+More information on *modules* is available for each resource in the documentation.
+Within the software documentation you can also find information on **How to use** said software
 at our resources.
 
 ## Requesting new software

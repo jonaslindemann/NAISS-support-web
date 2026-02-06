@@ -1,3 +1,4 @@
+tier: 3
 resources:
   - resource: cpe25.03.gh
     versions:

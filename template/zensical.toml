@@ -162,6 +162,7 @@ nav = [
     { "How to Run Jobs" = [
        { "How to Run Jobs" = "dardel/run_jobs/job_scheduling.md" },
        { "How to submit jobs" = "dardel/run_jobs/queueing_jobs.md" },
+       { "How to use module to load different softwares into your environment" = "dardel/software/module.md" },
        { "Job scripts" = "dardel/run_jobs/job_scripts.md" },
        { "Job script examples" = "dardel/run_jobs/job_scripts_dardel.md" },
        { "Job arrays" = "dardel/run_jobs/job_arrays.md" },
@@ -182,9 +183,8 @@ nav = [
   ]},
   { "Contact Support" = "contact/contact_support.md" },
   { "Available software" = [
+    { "Support tiers" = "basics/tiers.md" },
     { "Available softwares" = "applications/index.md" },
-    { "How to use module to load different softwares into your environment" = "dardel/software/module.md" },
-
 
 # This file intentionally ends here and -indeed- there are some missing braces.
 # That is because the file 'format_software_info.py' (in the project root)

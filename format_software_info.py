@@ -63,10 +63,13 @@ def checkSoftware(softwarename,clusters):
       found=True
   return found
 #-------------------------------------------------------------------------------
-# Write which versions of the software are installed
+# Write which versions of the software are installed and the support tier
 def writeVersions(softwarename,clusters,fp,fpidx):
   with open(os.path.join(SOFTWARE_DIR, softwarename, "versions.yaml"), 'r') as file:
     yaml_data = yaml.safe_load(file)
+  if "tier" in yaml_data:
+    fp.write("\n**Support tier:** %s" % (yaml_data["tier"],))
+    fp.write("\n\nRead information about [support tiers](%s)." % ("/basics/tiers.md"))
   fp.write("\n## Installed versions\n\n")
   fp.write("| Resource | Version |\n|---|---|\n")
   fpidx.write("| [%s](%s) | " % (softwarename.capitalize(),os.path.join(softwarename,"index.md")))
