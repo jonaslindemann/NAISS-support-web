@@ -177,9 +177,7 @@ nav = [
        { "File transfer" = "dardel/data_management/file_transfer.md" },
        { "KTH OneDrive (rclone)" = "dardel/data_management/rclone_onedrive.md" },
      ]},
-    { "Frequently Asked Questions (FAQ)" = [
-       { "FAQ" = "dardel/faq/faq.md" },
-     ]},
+    { "Frequently Asked Questions (FAQ)" = "dardel/faq/faq.md" },
   ]},
   { "Contact Support" = "contact/contact_support.md" },
   { "Available software" = [
