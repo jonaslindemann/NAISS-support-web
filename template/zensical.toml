@@ -143,6 +143,8 @@ nav = [
   { "Introduction" = "basics/introduction.md" },
   { "Getting Access" = "getting_access/get_access.md" },
   { "Software Development Assistance" = "getting_access/dev_support.md" } ,
+  { "Alvis" = "https://www.c3se.chalmers.se/documentation/first_time_users/intro-alvis/slides/" } ,
+  { "Bianca" = "https://docs.uppmax.uu.se/cluster_guides/bianca/" } ,
   { "Dardel" = [
     { "Quick Start" = "dardel/basics/quickstart.md" },
     { "How to Login" = [
@@ -179,10 +181,12 @@ nav = [
      ]},
     { "Frequently Asked Questions (FAQ)" = "dardel/faq/faq.md" },
   ]},
+  { "LUMI" = "https://docs.csc.fi" } ,
+  { "Tetralith" = "https://www.nsc.liu.se/support/systems/tetralith-getting-started/" } ,
   { "Contact Support" = "contact/contact_support.md" },
   { "Available software" = [
+    { "Index" = "applications/index.md" },
     { "Support tiers" = "basics/tiers.md" },
-    { "Available softwares" = "applications/index.md" },
 
 # This file intentionally ends here and -indeed- there are some missing braces.
 # That is because the file 'format_software_info.py' (in the project root)
