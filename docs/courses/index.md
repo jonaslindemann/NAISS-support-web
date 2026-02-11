@@ -14,7 +14,7 @@ This page helps you find the courses you need.
 - Command line courses:
     - Basic: [the Command Line 101 course](https://hpc2n.github.io/linux-command-line-101)
     - Intermediate: [the Command Line 201 course](https://uppmax.github.io/linux-command-line-201/)
-- Logging in and transferring data: [Logging in and transferring data](https://uppmax.github.io/naiss_file_transfer_course/)
+- Logging in and transferring data: [the NAISS 'Connect and File Transfer' course](https://uppmax.github.io/naiss_file_transfer_course/)
 - Running jobs on HPC systems:
   [the NAISS 'Running jobs on HPC systems' course](https://uppmax.github.io/NAISS_Slurm/)
 - Selecting software modules:
