@@ -13,8 +13,7 @@ This is the documentation for NAISS support.
 
 ## Published material
 
-The published webpages reside on different location depending if you are changing
-the support documentation or that main website.
+The published webpages reside on different locations depending if you are changing the support documentation or that main website.
 
 ### Main website
 
@@ -34,7 +33,7 @@ The primary document is available in `template/index.md`
 When site is build this file will act as a template, copied to
 the main folder and software information will be added to it.
 Also there is a file called `clusters.yaml`
-which directs what softwares will be published by pointing out active clusters, and their os.
+which directs what softwares will be published by pointing out active clusters, and their OS.
 
 ### Files for software
 
