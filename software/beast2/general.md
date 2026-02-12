@@ -127,7 +127,7 @@ beast beast2_setup.xml
 Then run this script using `sbatch run_beast2.sh`.
 
 Note that this is a *minimal* script.
-See [the PDC documentation about job scripts](../../docs/dardel/run_jobs/job_scripts/)
+See [the PDC documentation about job scripts](../../docs/dardel/run_jobs/job_scripts.md)
 for ways to improve this script.
 
 ## View the trees using DensiTree
@@ -162,5 +162,5 @@ Tracer is a tool to analyse the results of a
 (BEAST or) BEAST2 run.
 
 It is not installed on the PDC clusters.
-[Contact PDC support](../../docs/dardel/contact/contact_support.md)
+[Contact PDC support](../../docs/contact/contact_support.md)
 if you need it.
