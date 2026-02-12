@@ -528,8 +528,7 @@ mem
 mfma
 MKL
 overdrafted
-parallelized
-parallelization
+
 pgCC
 pgcc
 pgf
@@ -749,7 +748,7 @@ kth
 pdc
 preload
 socio
-sexualized
+
 lundberg
 marcus
 bmbolstad
@@ -895,7 +894,7 @@ Söderberg
 Tilda
 vCPU
 VirtualBox
-virtualized
+
 xNVIDIA
 DNS
 lookups
@@ -1168,9 +1167,7 @@ Alpay
 alse
 ambermd
 amd
-analyze
-analyzes
-analyzing
+
 andOTP
 anl
 ANL
@@ -1191,8 +1188,6 @@ Atomistic
 attr
 auristor
 Auth
-authenticaiton
-authorization
 autoconf
 Autoconf
 autodiff
@@ -1241,7 +1236,7 @@ canu
 Canu
 Caramba
 cas
-categorized
+
 cbc
 Cbc
 CBLAS
@@ -1269,7 +1264,7 @@ CFX
 cgi
 cgns
 CGNS
-characterize
+
 checksums
 Chepulskii
 chpl
@@ -1297,8 +1292,6 @@ computional
 comsol
 Comsol
 COMSUBS
-containerized
-containerzied
 CONTCAR
 contigs
 contrib
@@ -1336,7 +1329,7 @@ Cuda
 cudnn
 cuDNN
 Curtarolo
-customized
+
 CVODES
 cvs
 cxx
@@ -1456,7 +1449,6 @@ fftw
 FFTW
 FHI
 filetransfer
-finalizing
 FINDSYM
 firefox
 firemodels
@@ -1492,7 +1484,7 @@ GBytes
 GCD
 geant
 Geant
-generalized
+
 gensys
 Gensys
 GENSYS
@@ -1577,7 +1569,6 @@ INCAR
 indels
 infil
 informatik
-initilization
 inp
 inpgen
 inputfile
@@ -1685,8 +1676,8 @@ ligands
 Linaro
 linaroforge
 Lindgren
-linearised
-linearized
+
+
 literalinclude
 literalincludes
 liu
@@ -1694,7 +1685,7 @@ LLG
 llnl
 llvm
 LMTO
-localized
+
 lockfile
 Loria
 lq
@@ -1716,7 +1707,6 @@ machinefile
 machinefiles
 macos
 magick
-magnetization
 makefile
 Makefile
 Makefiles
@@ -1749,7 +1739,7 @@ MicroMagnum
 microsoft
 miniconda
 Miniconda
-Minimize
+
 MinION
 MIP
 Misspelled words:
@@ -1869,16 +1859,10 @@ OpenSHMEM
 openssh
 opensuse
 opentelemac
-optimial
-optimization
-Optimization
-optimizations
-optimize
-optimized
+
 ORCA
 orcaforum
-organizations
-organized
+
 osc
 OSX
 OSZICAR
@@ -1888,7 +1872,7 @@ pacakges
 PacBio
 PacificBiosciences
 PAPI
-parallelize
+
 parallell
 params
 paraview
@@ -1925,7 +1909,7 @@ pla
 planewave
 pletora
 PoD
-Polarized
+
 polymorphisms
 POSCAR
 postprocessing
@@ -1941,9 +1925,6 @@ prepend
 prepends
 preprocessing
 PrgEnv
-prioritize
-Prioritize
-prioritizing
 prj
 
 projec
@@ -1973,7 +1954,6 @@ readthedocs
 reccommend
 recieve
 recieved
-recognized
 recoverdir
 recv
 Recv
@@ -2056,8 +2036,6 @@ sourceme
 Spack's
 spattach
 spbau
-specialized
-Specialized
 spectroscopies
 SpFFT
 spglib
@@ -2089,9 +2067,6 @@ svm
 SVM
 swedish
 SYCL
-synchronization
-synchronize
-synchronizing
 Tatham
 Tcl
 tcp
@@ -2154,7 +2129,6 @@ url
 userpath
 userspace
 usr
-utilize
 utk
 vasp
 Vasp
@@ -2172,11 +2146,7 @@ VeloxChem
 Vergata
 viceversa
 VisIt
-visualization
-Visualization
-visualizations
-visualize
-visualizing
+
 vmd
 VMD
 VMS
