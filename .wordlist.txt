@@ -1222,7 +1222,7 @@ bioinf
 biomolecular
 biomolecules
 bitbucket
-Björn’s
+Björn's
 BLAS
 brehm
 broadinstitute
@@ -1285,7 +1285,7 @@ cmd
 Cmd
 CMD
 CMPT
-Codeplay’s
+Codeplay's
 colors
 commerical
 compbio
@@ -1638,7 +1638,7 @@ kpasswd
 KPOINTS
 kpts
 krb
-Kuntz’s
+Kuntz's
 kx
 labri
 Lammps
@@ -2053,7 +2053,7 @@ solvation
 soLvers
 sourceforge
 sourceme
-Spack’s
+Spack's
 spattach
 spbau
 specialized
