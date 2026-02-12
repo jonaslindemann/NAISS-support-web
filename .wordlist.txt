@@ -1,16 +1,9 @@
-ar
-pixi
 Linköping
 xclock
-Kebnekaise's
-StackExchange
-Pelle's
 lycheeverse
 Pavlin's
 Umeå
 awk
-BEAUti
-belo
 benchmarking
 BenchmarkTools
 bianca
@@ -37,7 +30,6 @@ CUDA
 Dardel
 DataDirect
 DataFrames
-DDN
 devcore
 devel
 dir
