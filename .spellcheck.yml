@@ -23,4 +23,3 @@ matrix:
     - '**/*.md|!docs/software/perl.md|!docs/index.md'
   aspell:
     lang: en
-    d: en_UK
