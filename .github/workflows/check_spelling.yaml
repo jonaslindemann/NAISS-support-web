@@ -1,0 +1,29 @@
+# Check that there is correct spelling in all files
+name: Spellcheck
+
+# Check spelling on the 21st day of the month.
+# 21st as the first letter of this repo is the 21st letter in the alphabet.
+on:
+  push:
+    paths:
+      - .github/workflows/check_spelling.yaml
+      - 'docs/**'
+      - .wordlist.txt
+      - .spellcheck.yml
+  pull_request:
+    paths:
+      - .github/workflows/check_spelling.yaml
+      - 'docs/**'
+      - .wordlist.txt
+      - .spellcheck.yml
+  schedule:
+  - cron: "0 0 21 * *"
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout first
+      - uses: actions/checkout@v4
+      - uses: rojopolis/spellcheck-github-actions@0.43.0
+        name: Spellcheck
