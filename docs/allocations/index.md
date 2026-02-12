@@ -43,7 +43,7 @@ You can decide what allocation would suit the best for your project with the hel
 | Proposal evaluation | Only technical evaluation | Only technical evaluation | Scientific and technical evaluation. Evidence of successful work on a medium allocation. |
 | Time limit | Evaluated weekly | Evaluated monthly. Submission before the 15th every month | Evaluated by NAC twice a year |
 
-Once you decide on the details of your Time Allocation, [Apply via a SUPR account](/getting_access/get_access/#apply-via-a-supr-account).
+Once you decide on the details of your Time Allocation, [Apply via a SUPR account](../getting_access/get_access.md#apply-via-a-supr-account).
 You can then login/signup on [SUPR](https://supr.naiss.se) and submit a proposal.
 When you are a member of an active project, you may apply for a user account, in case you do not have it,
 directly within [SUPR](https://supr.naiss.se).
