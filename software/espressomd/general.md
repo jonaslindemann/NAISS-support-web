@@ -16,4 +16,4 @@ module load espressoMD/4.1.4
 
 For information on how to run EspressoMD, see [their homepage](https://espressomd.org/wordpress/)
 For information on how to submit jobs on Dardel, see
-[queueing jobs](../docs/dardel/run_jobs.md).
+[queueing jobs](../docs/dardel/run_jobs/job_scheduling.md).
