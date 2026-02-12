@@ -144,6 +144,9 @@ nav = [
   { "Getting Access" = "getting_access/get_access.md" },
   { "Software Development Assistance" = "getting_access/dev_support.md" } ,
   { "Alvis" = "https://www.c3se.chalmers.se/documentation/first_time_users/intro-alvis/slides/" } ,
+  { "Arrhenius" = [
+    { "Quick Start" = "arrhenius/basics/quickstart.md" },
+  ]},
   { "Bianca" = "https://docs.uppmax.uu.se/cluster_guides/bianca/" } ,
   { "Dardel" = [
     { "Quick Start" = "dardel/basics/quickstart.md" },

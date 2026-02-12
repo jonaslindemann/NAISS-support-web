@@ -19,7 +19,7 @@ The table below brings you to the documentation of your favorite HPC cluster
 HPC Cluster|Documentation
 -----------|-------------------------------------------------------------------
 Alvis      |[Documentation](https://www.c3se.chalmers.se/documentation/first_time_users/intro-alvis/slides/) (external)
-Arrhenius  |Not yet
+Arrhenius  |[Documentation](arrhenius/basics/quickstart.md)
 Bianca     |[Documentation](https://docs.uppmax.uu.se/cluster_guides/bianca/) (external)
 Dardel     |[Documentation](dardel/basics/quickstart.md)
 LUMI       |[Documentation](https://docs.csc.fi) (external)
