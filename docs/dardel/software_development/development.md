@@ -67,7 +67,7 @@ The `cray-fftw` module needs to be loaded by user.
 ## Cray message passing toolkit
 
 The Cray message passing toolkit (CMPT) provides the `cray-mpich` module, which is based on ANL
-MPICH and has been optimized for Cray programming environment.
+MPICH and has been optimised for Cray programming environment.
 
 The `cray-mpich` module is loaded upon login, and its version can be changed by the `cpe` module.
 Once `cray-mpich` is loaded the compiler wrapper will automatically include MPI headers and link to
