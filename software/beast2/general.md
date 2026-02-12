@@ -102,7 +102,7 @@ or use a script.
 
 ???- question "How to start an interactive session?"
 
-    View [the PDC 'Run interactively' page](../../docs/run_jobs/run_interactively.md).
+    View [the PDC 'Run interactively' page](../../docs/dardel/run_jobs/run_interactively.md).
 
 On an interactive node, run BEAST2 on the saved BEAST2 model:
 
@@ -127,7 +127,7 @@ beast beast2_setup.xml
 Then run this script using `sbatch run_beast2.sh`.
 
 Note that this is a *minimal* script.
-See [the PDC documentation about job scripts](../../docs/run_jobs/job_scripts/)
+See [the PDC documentation about job scripts](../../docs/dardel/run_jobs/job_scripts/)
 for ways to improve this script.
 
 ## View the trees using DensiTree
@@ -153,7 +153,7 @@ As it is a CPU heavy program, run it in an interactive session.
 
 ???- question "How to start an interactive session?"
 
-    View [the PDC 'Run interactively' page](../../docs/run_jobs/run_interactively.md).
+    View [the PDC 'Run interactively' page](../../docs/dardel/run_jobs/run_interactively.md).
 
 
 ## Run Tracer
@@ -162,5 +162,5 @@ Tracer is a tool to analyse the results of a
 (BEAST or) BEAST2 run.
 
 It is not installed on the PDC clusters.
-[Contact PDC support](../../docs/contact/contact_support.md)
+[Contact PDC support](../../docs/dardel/contact/contact_support.md)
 if you need it.
