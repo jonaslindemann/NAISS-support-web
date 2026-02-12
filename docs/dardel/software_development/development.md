@@ -53,7 +53,7 @@ On Dardel a starting point is to use the `PrgEnv-cray` and the `PrgEnv-gnu` envi
 ## Cray scientific and math libraries
 
 The Cray scientific and math libraries (CSML) provide the `cray-libsci` and `cray-fftw` modules
-that are designed to provide optimial performance from Cray systems.
+that are designed to provide optimal performance from Cray systems.
 
 - `cray-libsci`: provides BLAS, LAPACK, ScaLAPACK, etc.
 - `cray-fftw`: provides fastest fourier transform.
