@@ -10,27 +10,27 @@ Verbose printing of the flags and settings that are active when using the compil
 -craype-verbose
 ```
 
-A suggested starting point for code optimization on AMD EPYC Zen 2 processors are
+A suggested starting point for code optimisation on AMD EPYC Zen 2 processors are
 
 * for the **Cray** compilers
 
 ```text
 # C C++ flags
--Ofast              # Aggresive optimization
--flto               # link time optimization
--ffp=3              # optimization of floating-point math operations. Supported values are 0, 1, 2, 3, and 4.
+-Ofast              # Aggresive optimisation
+-flto               # link time optimisation
+-ffp=3              # optimisation of floating-point math operations. Supported values are 0, 1, 2, 3, and 4.
 -fcray-mallopt      # use Cray's mallopt parameters, can improve performance
 -fno-cray-mallopt   # no use of Cray's mallopt parameters, can reduce memory usage
 -fopenmp            # enable OpenMP
 
 # Fortran flags
--02                 # default optimization
--O3                 # aggresive optimization
+-02                 # default optimisation
+-O3                 # aggresive optimisation
 -O ipaN             # level of inline expansion N=0-5, default N=3
--hlist=a            # write optimization info to listing file
+-hlist=a            # write optimisation info to listing file
 -hlist=a            # create source listing with loopmark information
 -homp               # enable OpenMP
--hthread            # level of optimization of OpenMP directive, N=0-3, default N=2
+-hthread            # level of optimisation of OpenMP directive, N=0-3, default N=2
 ```
 
 * for the **GCC** compilers
@@ -39,7 +39,7 @@ A suggested starting point for code optimization on AMD EPYC Zen 2 processors ar
 # General flags
 
 # C C++  Fortran flags
--O3                 # aggresive optimization
+-O3                 # aggresive optimisation
 -march=znver2       # name of the target architecture
 -mtune=znver2       # name of the target processor for which code performance will be tuned
 -mfma               # enable fma instructions
@@ -57,12 +57,12 @@ A suggested starting point for code optimization on AMD EPYC Zen 2 processors ar
 
 ```text
 # C C++ Fortran flags
--02                 # default optimization
--O3                 # aggresive optimization
+-02                 # default optimisation
+-O3                 # aggresive optimisation
 -O ipaN             # level of inline expansion N=0-5, default N=3
--flto               # link time optimization
+-flto               # link time optimisation
 -funroll-loops      # loop unrolling
--unroll-aggressive  # advance loop optimization
+-unroll-aggressive  # advance loop optimisation
 -fopenmp            # enable OpenMP
 
 # Fortran flags
@@ -71,7 +71,7 @@ A suggested starting point for code optimization on AMD EPYC Zen 2 processors ar
 
 ## Build examples
 
-**Example 1:** Build an MPI parallelized Fortran code within the PrgEnv-cray environment
+**Example 1:** Build an MPI parallelised Fortran code within the PrgEnv-cray environment
 
 In this example we build and test run a Hello World code `hello_world_mpi.f90`.
 
@@ -110,7 +110,7 @@ srun -n 128 ./hello_world_mpi.x
 #
 ```
 
-Having here used the **ftn** compiler wrapper, the linking to the cray-mpich library was done without the need to specify linking flags. As is expected for this code, in runtime each MPI rank is writing its Hello World to standard output **without** any synchronization with the other ranks.
+Having here used the **ftn** compiler wrapper, the linking to the cray-mpich library was done without the need to specify linking flags. As is expected for this code, in runtime each MPI rank is writing its Hello World to standard output **without** any synchronisation with the other ranks.
 
 **Example 2:** Build a C code with PrgEnv-gnu. The code requires linking to a Fourier transform library.
 
