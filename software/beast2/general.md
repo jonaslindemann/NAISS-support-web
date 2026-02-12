@@ -102,7 +102,7 @@ or use a script.
 
 ???- question "How to start an interactive session?"
 
-    View [the PDC 'Run interactively' page](../../run_jobs/run_interactively.md).
+    View [the PDC 'Run interactively' page](../../docs/run_jobs/run_interactively.md).
 
 On an interactive node, run BEAST2 on the saved BEAST2 model:
 
