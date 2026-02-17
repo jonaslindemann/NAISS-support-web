@@ -3,11 +3,13 @@ import sys
 import yaml
 import re
 import traceback
+from pathlib import Path
+import shutil
 #-------------------------------------------------------------------------------
 # Constants
 #-------------------------------------------------------------------------------
 SOFTWARE_DIR='software'
-SOFTWARE_DOCS='docs/applications/'
+SOFTWARE_DOCS=os.path.join('docs', 'applications')
 #-------------------------------------------------------------------------------
 # get files and folder names of folder dirpath
 def getDirectoryList(dirpath,mask):
@@ -37,7 +39,7 @@ def writeKeywords(software,fp,keywords):
   fp.write("---\n")
   fp.write("title: Information about %s\n" % (software))
   fp.write("keywords:\n")
-  with open(os.path.join(SOFTWARE_DIR, software, "keywords.yaml"), 'r') as file:
+  with open(os.path.join(SOFTWARE_DIR, software, "keywords.yaml"), 'r', encoding='utf-8') as file:
     yaml_data = yaml.safe_load(file)
   for value in yaml_data['keywords']:
     fp.write("  - %s\n" % (value))
@@ -52,7 +54,7 @@ def checkSoftware(softwarename,clusters):
   found=False
   if not os.path.isfile(os.path.join(SOFTWARE_DIR, softwarename, "versions.yaml")):
     return found
-  with open(os.path.join(SOFTWARE_DIR, softwarename, "versions.yaml"), 'r') as file:
+  with open(os.path.join(SOFTWARE_DIR, softwarename, "versions.yaml"), 'r', encoding='utf-8') as file:
     yaml_data = yaml.safe_load(file)
   if yaml_data is None:
     return found
@@ -72,7 +74,7 @@ def writeVersions(softwarename,clusters,fp,fpidx):
     fp.write("\n\nRead information about [support tiers](%s)." % ("/basics/tiers.md"))
   fp.write("\n## Installed versions\n\n")
   fp.write("| Resource | Version |\n|---|---|\n")
-  fpidx.write("| [%s](%s) | " % (softwarename.capitalize(),os.path.join(softwarename,"index.md")))
+  fpidx.write("| [%s](%s) | " % (softwarename.capitalize(),join_url(softwarename, "index.md")))
   firstidx=True
   for resource in yaml_data['resources']:
     cluster=getClusterText(resource['resource'],clusters)
@@ -97,7 +99,7 @@ def writeVersions(softwarename,clusters,fp,fpidx):
 def appendGeneralInfo(softwarename,fp):
   fp.write("## General information\n\n")
   if os.path.isfile(os.path.join(SOFTWARE_DIR,softwarename,"general.md")):
-    fp2=open(os.path.join(SOFTWARE_DIR,softwarename,"general.md"),"r")
+    fp2=open(os.path.join(SOFTWARE_DIR,softwarename,"general.md"),"r", encoding='utf-8')
     for line in fp2:
       fp.write(line)
     fp2.close()
@@ -118,26 +120,32 @@ def getClusterText(resource,clusters):
 #-------------------------------------------------------------------------------
 # Write the TOML file with categories and software
 def writeYAMLMenu(keywords):
-  fp=open("zensical.toml","a")
+  fp=open("zensical.toml","a", encoding='utf-8')
   keywords=dict(sorted(keywords.items()))
   for key in keywords:
     keywords[key].sort()
     fp.write("    { \"%s\" = [\n" % (key.capitalize()))
     for value in keywords[key]:  
-      fp.write("      { \"%s\" = \"%s\" },\n" % (value.capitalize(),os.path.join("applications",value,"index.md")))
+      fp.write("      { \"%s\" = \"%s\" },\n" % (value.capitalize(),join_url("applications", value, "index.md")))
     fp.write("    ]},\n")
   fp.write("  ]},\n]")
   fp.close()
 #-------------------------------------------------------------------------------
+def join_url(*parts):
+  cleaned=[str(part).strip("/\\") for part in parts]
+  return "/".join(cleaned)
+#-------------------------------------------------------------------------------
 def main():
   print("Creating files from templates")
-  os.system("cp template/zensical.toml .")
-  os.system("mkdir -p %s" % (SOFTWARE_DOCS,))
-  os.system("cp template/index.md %s" % (SOFTWARE_DOCS,))
-  with open("clusters.yaml", 'r') as file:
+  repo_root=Path(".")
+  software_docs_path=Path(SOFTWARE_DOCS)
+  shutil.copy2(repo_root / "template" / "zensical.toml", repo_root / "zensical.toml")
+  software_docs_path.mkdir(parents=True, exist_ok=True)
+  shutil.copy2(repo_root / "template" / "index.md", software_docs_path / "index.md")
+  with open("clusters.yaml", 'r', encoding='utf-8') as file:
     clusters = yaml.safe_load(file)
   softwares,files=getDirectoryList(SOFTWARE_DIR,'')
-  fpidx=open(SOFTWARE_DOCS+"/index.md","a")
+  fpidx=open(software_docs_path / "index.md","a", encoding='utf-8')
   keywords={}
   keywords['misc']=[]
   print("Fetching and sorting softwares")
@@ -145,11 +153,14 @@ def main():
     softwarename=os.path.basename(software)
     if not checkSoftware(softwarename,clusters):
       continue
-    os.system("mkdir -p %s" % (os.path.join(SOFTWARE_DOCS,softwarename)))
-    if os.path.isdir(os.path.join(SOFTWARE_DIR,softwarename,"files")):
-      os.system("cp -r %s/files %s" % (os.path.join(SOFTWARE_DIR,softwarename),os.path.join(SOFTWARE_DOCS,softwarename)))
-    file=os.path.join(SOFTWARE_DOCS,softwarename,"index.md")
-    fp=open(file,"w")
+    software_dir_path=software_docs_path / softwarename
+    software_dir_path.mkdir(parents=True, exist_ok=True)
+    source_files_dir=Path(SOFTWARE_DIR) / softwarename / "files"
+    if source_files_dir.is_dir():
+      dest_files_dir=software_dir_path / "files"
+      shutil.copytree(source_files_dir, dest_files_dir, dirs_exist_ok=True)
+    file=software_dir_path / "index.md"
+    fp=open(file,"w", encoding='utf-8')
     writeKeywords(softwarename,fp,keywords)
     fp.write("# %s\n" % (softwarename.capitalize()))
     writeVersions(softwarename,clusters,fp,fpidx)
